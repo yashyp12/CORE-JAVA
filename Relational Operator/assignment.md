@@ -5,8 +5,6 @@
 5 - check whether leap year or not
 6 - check whether prime num or in given range (0-100) ->print true false
 
-
-
 //
 wjp to find even odd without using modulas 
 2 finding the largest num amoong 2
