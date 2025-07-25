@@ -24,6 +24,8 @@ public class Electricity_Bill {
 
         switch (option) {
 
+          
+
             case 1: {
                 System.out.println("Showing the Customer Data");
                 System.out.println("Customer Name is " + customerName);
@@ -65,6 +67,7 @@ public class Electricity_Bill {
                 break;
             }
 
+            
         }
 
         sc.close();
