@@ -15,6 +15,8 @@ public static void main(String[] args) {
         System.out.print(j +" ");
         j = j*2;
 
+        
+
     }
     
 
