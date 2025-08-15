@@ -41,6 +41,10 @@ class sum2 extends sums1{
 sums1 f = new sums1();
 // f.A
 
+static void z(){
+    Addition();
+}
+
 public static void main(String[] args) {
     
     Addition();
