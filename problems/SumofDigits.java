@@ -1,5 +1,4 @@
 
-
 public class SumofDigits {
     // Implement a program to find out whether a number is divisible by the sum of its digits
 
