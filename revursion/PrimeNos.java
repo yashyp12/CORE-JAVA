@@ -1,7 +1,6 @@
 
 import java.util.Scanner;
 
-
 public class PrimeNos {
 
     static int num;
@@ -12,10 +11,10 @@ public class PrimeNos {
 
         System.out.println("Enter the num");
         num = new Scanner(System.in).nextInt();
-        dup = num;
 
-        System.out.println("the number " + dup + "is Prime " + result);
         dup = num;
+        Prime();
+        System.out.println("the number " + result);
 
         //num - 12
         // dup = 12
@@ -23,14 +22,18 @@ public class PrimeNos {
     }
 
     static void Prime() {
-
+        if (num < 2) {
+            return;
+        }
         --num;
+
         if (num == 2) {
             result = true;
             return;
         }
 
         if (dup % num == 0) {
+
             return;
         }
         Prime();
