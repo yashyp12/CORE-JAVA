@@ -13,7 +13,7 @@ public class LargestAmoong3 {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        System.out.println((a>b)?(a>c));
+//        System.out.println((a>b)?(a>c));
 
         
     }
