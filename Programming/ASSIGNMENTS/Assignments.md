@@ -20,4 +20,4 @@ fibo -
 1 - print all fibo between given range
 2 - check if all digit of num is fibo
 3 - count of fibo num between given range
-4 - tell me least hvae to be added or subtract from a given num
+4 - tell me least hvae to be added or subtract from a given num	
