@@ -4,7 +4,7 @@ public class fibonacii {
     public static void main(String[] args) {
 //check whether the num is fibonacii or not
 
-        int num = 10;
+        int num = 6;
         int n1 = 0;
         int n2 = 1;
         int n3;
