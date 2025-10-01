@@ -18,7 +18,16 @@ public class WrapperEx {
 
 
     // final int bonus = 2;
-    
+
+//  using final keyword
+     final A yash = new A("yASH patil");
+       yash.name = "23";
+//       when a non primitive is final, you cannot reasign it
+//       yash = new A("Patil");
+A obj;
+    for(int i =0;i<=100000000;i++){
+        obj = new A("random name");
+    }
     }
 
 
@@ -33,6 +42,25 @@ public class WrapperEx {
 
 
 class A{
+
     final int num = 23;
-    
+    String name;
+
+    public A(String name) {
+        System.out.println("object is been created");
+        this.name = name;
+    }
+
+//    finalisation method
+/*
+when any obj in the class in the memoery is freed out this will call
+its deprecated
+ */
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("object is destroyed" );
+    }
+    public static void main(String[] args) {
+
+    }
 }
