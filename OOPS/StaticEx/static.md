@@ -1,0 +1,8 @@
+-Belongs to the class 
+- can call using ClassName.staticVar
+- no need to create an object
+- something which is non static, are belongs to the object
+- cannot acces non static stuf without referencing thier instances in a static ocntext
+-  sattic methods can be accces directly by the class name 
+-  does not refer to this keyword or super keyword in inheritance
+- we cannot use this keywrod inside the static methods
