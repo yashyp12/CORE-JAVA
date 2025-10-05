@@ -6,3 +6,4 @@
 -  sattic methods can be accces directly by the class name 
 -  does not refer to this keyword or super keyword in inheritance
 - we cannot use this keywrod inside the static methods
+- becuase the inner class is dependant on outer class if ithe inner cclass dont have the static keyword becasue to run inner class we need to create obj of outer class
