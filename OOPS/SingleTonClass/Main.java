@@ -10,6 +10,7 @@ public class Main {
         Singleton sc1 = Singleton.getInstance();
         Singleton sc3 = Singleton.getInstance();
         Singleton sc4 = Singleton.getInstance();
+        System.out.println(sc4.hashCode());
 
     }
 }
