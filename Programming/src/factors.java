@@ -2,7 +2,7 @@
 class factors {
 
     static int num = 100;
-    static int den = 1;
+    static int den = 2;
     static int count = 1;
 
     public static void main(String[] args) {
