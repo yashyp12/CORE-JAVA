@@ -6,10 +6,16 @@ public class Box {
     double height;
     double weight;
 
+    int width = -1;
+
     Box() {
+        super(); // calls the constructor of object class
+        //used to intialsed the values present in the parent class
         this.length = -1;
         this.height = -1;
         this.weight = -1;
+        this.width  = 3;
+
     }
 
     //    cube
