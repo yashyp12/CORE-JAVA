@@ -23,8 +23,8 @@ public class Main {
 
          */
 
-        Box box5 = new BoxWeight(2, 3, 4, 2);
-        System.out.println(box5.width);
+        // Box box5 = new BoxWeight(2, 3, 4, 2);
+        // System.out.println(box5.width);
 
 
 
@@ -38,8 +38,8 @@ SIMPLE THING TEH CHILD CAN INHERIT THE PARENT CLASS
 BUT THE PARENT CLAS CANNOT THE CHILD HE DONT KNWO ABOUT THE MEMBERS OF CHILD CLASSS
         */
 
-//        BoxWeight box6  = new Box(1,2,3,4);
-//        System.out.println(box6);
+    //    BoxWeight box6  = new Box(1,2,3,4);
+    //    System.out.println(box6);
 
 
 

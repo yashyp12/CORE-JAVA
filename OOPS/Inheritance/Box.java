@@ -35,6 +35,12 @@ public class Box {
         this.height = oldBox.height;
         this.weight = oldBox.weight;
         this.length = oldBox.length;
+        // we dont have aces of the roll from the child because the obj is of child
+        // but the refernce in which we are trying to store is it of parent
+        // so we cacn only acces the var which are in parent
+
+        //what is access is based on the type of ref var not type of obj
+//        System.out.println(oldBox.roll);
     }
 
     public void information(){
