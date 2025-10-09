@@ -10,7 +10,8 @@ class Country {
     Long population;
     char currency;
 
-    public Country(String name, String capital, String language, String pm, double area, Long population, char currency) {
+    public Country(String name, String capital, String language, String pm, double area,
+     Long population, char currency) {
         this.name = name;
         this.capital = capital;
         this.language = language;
