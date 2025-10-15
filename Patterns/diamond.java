@@ -1,5 +1,6 @@
 
 public class diamond {
+// diamond
 
     public static void main(String[] args) {
 
@@ -16,13 +17,12 @@ public class diamond {
 
             System.out.println();
 
-            if(i<n/2){
+            if (i < n / 2) {
                 space--;
-                star +=2;
-            }
-            else{
-                space ++;
-                star -=2;
+                star += 2;
+            } else {
+                space++;
+                star -= 2;
             }
 
         }
