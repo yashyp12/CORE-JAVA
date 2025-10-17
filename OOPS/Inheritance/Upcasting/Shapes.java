@@ -25,7 +25,7 @@ class Dog extends Animal {
     }
 }
 
-public class Main {
+public class Shapes {
     // upcasting -👉 Upcasting means:
 // Assigning child object to a parent reference.
 // (“Up” because you’re moving up in the inheritance chain.)

@@ -52,18 +52,49 @@ public class TypeCast1 {
 // then whole operation will be promoted to long
 // System.out.println(3*54.3f);
 
-byte b = 42;
-char c = 'w';
-short s = 1024;
-int i = 3434344;
-float f = 5.34f;
-double d = 5.3645;
-double result = (f+b) +  (i/c) + (d-s); 
+// byte b = 42;
+// char c = 'w';
+// short s = 1024;
+// int i = 3434344;
+// float f = 5.34f;
+// double d = 5.3645;
+// double result = (f+b) +  (i/c) + (d-s); 
 //  float  int double 
 // all smallers type are converted to the bigger one
 
-System.out.println((f+b) + " " +  (i/c) + " " + (d-s));
-System.out.println(result);
+// System.out.println((f+b) + " " +  (i/c) + " " + (d-s));
+// System.out.println(result);
+
+
+
+byte a;
+//         short s = 23;
+//         a = (byte) s;
+
+//         int i =354544;
+//     a = (byte)i;
+//     long l = 343l;
+//     a = (byte)l;
+//     System.out.println(a);  // simply it will give us the modulas of 343%256(max val of long)
+// float f = 25.3f;
+// a = (byte) f; 
+// System.out.println(a);
+        short s;
+        int i = 32768;
+// return in minus value because it can store only 32767
+        // s = (short) i;
+        // System.out.println(s);
+
+        // long l = 34343l;
+        // double d = 232.35;
+        // s = (short) d;
+        // System.out.println(s);
+
+
+        // long l;
+        // double f = 23.43f;
+        // l = (long)f;
+        // System.out.println(l);
 
     }
 }
