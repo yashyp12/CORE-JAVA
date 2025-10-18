@@ -1,3 +1,4 @@
+package Polymorphism.RuntimePoly;
 
 class Shapes {
 
@@ -11,7 +12,8 @@ class Circle extends Shapes {
 //this will have priority whenver the obj of circle is created
 //hence it is overriding the parent method
 
-    @Override //this is called annotation
+    @Override
+        //this is called annotation
     void area() {
         System.out.println("area is pie r  i am circle");
     }
@@ -38,6 +40,11 @@ public class Main {
 // whatever is being access ddoes not depend on the obj type , 
 // depends upon the ref type
 //but which one is access is depend on the type of obj
+/*
+overriding means - type is the ref var as the parent class
+but the obj is of type is subclass
+
+ */
 
     }
 }

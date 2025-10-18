@@ -27,14 +27,14 @@ class Bank {
 }
 
 
-class Payment{
+class Payments{
     String name;
     String emailId;
     long contact;
     Bank bank;
 
 
-    public Payment(String name,String emailId,long contact,Bank bank)
+    public Payments(String name,String emailId,long contact,Bank bank)
     {
         super();
         this.name= name;
