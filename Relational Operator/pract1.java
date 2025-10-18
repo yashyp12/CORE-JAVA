@@ -1,8 +1,8 @@
-public class pract1 {
-    
-
-    public static void main(String[] args) {
-        
-
-    }
-}
+//public class pract1 {
+//
+//
+//    public static void main(String[] args) {
+//
+//
+//    }
+//}

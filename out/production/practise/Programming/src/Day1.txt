@@ -1,0 +1,22 @@
+When we want to run a no arg method ?  
+
+
+when we want to run a set of instruction which doesn't requires 
+
+
+OPERATORS - 
+Arithmetic Operators
+assignment operators
+relational operators
+conditional operators
+logical operators
+bitwise
+compound assignment
+
+
+why we use data types - ?
+->help programmer to identify the data, as well help to create container and to create respective containers to store the data
+ 
+data type -> jaat
+
+
