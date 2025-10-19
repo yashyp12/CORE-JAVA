@@ -29,3 +29,4 @@ if we maek a class final implicitly makes its methods fina ltoo
 - Static methods as such we cannot override it ,
 - sattic method can be inherited btu cannot overridden
 - because main class one always calls does not depend on the object
+- overriding depends upon object , static does not depend on object tahts why
