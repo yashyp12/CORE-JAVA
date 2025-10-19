@@ -6,8 +6,9 @@ package Polymorphism.Upcasting;
 class Animal {
 
     String name;
- 
-    void sound() {
+
+//    final ex of early binding
+      void sound() {
         System.out.println("Some sound");
     }
 
@@ -15,7 +16,7 @@ class Animal {
 
 class Dog extends Animal {
 
-    @Override //optional 
+    @Override //optional
     void sound() {
    
         System.out.println("Bark Bark !");
@@ -31,7 +32,11 @@ public class Shapes {
 // Assigning child object to a parent reference.
 // (“Up” because you’re moving up in the inheritance chain.)
 
-    public static void main(String[] args) {
+     public static void greeting(){
+            System.out.println("i am a greetings");
+        }
+
+      static void main(String[] args) {
         //its an upcasting storing the child obj in parent ref
         //now only the methods accesible which are in Animal parnet 
         //if its override by child then it will run the child version
@@ -40,10 +45,13 @@ public class Shapes {
 // // look here the child hvae overridden one so that has been run
 //         obj.sound();
 
-
-
-
-
+//
     }
+}
 
+
+class Cir extends Shapes{
+    public static void main(String[] args) {
+        Shapes.greeting();
+    }
 }

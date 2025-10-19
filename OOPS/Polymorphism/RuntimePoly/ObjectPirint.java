@@ -7,10 +7,10 @@ public class ObjectPirint {
         this.num = num;
     }
 
-//    @Override
-//    public String toString(){
-//        return "objeprint";
-//    }
+//   @Override
+//   public String toString(){
+//       return "objeprint";
+//   }
     public static void main(String[] args) {
 
         ObjectPirint obj = new ObjectPirint(54);

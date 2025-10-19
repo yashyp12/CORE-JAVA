@@ -6,6 +6,9 @@ class Shapes {
         System.out.println("area is pie r ");
     }
 
+    static void greeting(){
+        System.out.println("i am from shapes class");
+    }
 }
 
 class Circle extends Shapes {
@@ -16,6 +19,13 @@ class Circle extends Shapes {
         //this is called annotation
     void area() {
         System.out.println("area is pie r  i am circle");
+    }
+
+
+//    for testing whether the static methods override or not
+
+    static void greeting(){
+        System.out.println("hey i am static from the circle");
     }
 }
 
@@ -45,6 +55,11 @@ overriding means - type is the ref var as the parent class
 but the obj is of type is subclass
 
  */
+
+//        checking whetehr static methods are override or not
+//        static method will not execute of the child class it will execture parent class version only
+        Shapes objx = new Circle();
+        objx.greeting();
 
     }
 }
