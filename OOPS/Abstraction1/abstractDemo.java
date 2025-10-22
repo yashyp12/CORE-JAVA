@@ -24,7 +24,7 @@ public class abstractDemo {
     }
 }
 
-abstract class Parent {
+  abstract class Parent {
     int age;
 
     public Parent() {
