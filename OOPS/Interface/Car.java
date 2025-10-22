@@ -2,6 +2,7 @@ package Interface;
 
 public class Car implements Engine, Brake {
 
+
     @Override
     public void start() {
         System.out.println("i start like normal car");
@@ -21,6 +22,8 @@ public class Car implements Engine, Brake {
     public void brake() {
         System.out.println("i brake like a normal car");
     }
+
+
 
 //   brake
 

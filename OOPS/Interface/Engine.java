@@ -4,7 +4,7 @@ public interface Engine {
 
     //    by default it is final and static
     static final int PRICE = 780000;
-
+    int a =23;
     void start();
 
     void stop();
