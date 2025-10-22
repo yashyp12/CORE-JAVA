@@ -20,3 +20,5 @@ Yes -
 
 abstract class contains normaml methods 
 Yes - 
+
+- we cannot use final behind abstract class becuase it prevents from being inherited
