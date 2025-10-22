@@ -21,4 +21,12 @@ Behavior with inheritance: If Child extends Parent, an instance of Child will re
 # Purpose: The most common use case is to check an object's type before safely casting it to a more specific type (downcasting), which prevents a ClassCastException. 
 
 getClass() 
--> is a method
+-> is a method we got the data about the class
+getClass()
+The getClass() method returns a Class object representing the exact runtime type of the object. It does not consider the inheritance hierarchy. 
+Key characteristics:
+Syntax: objectName.getClass().
+Behavior with inheritance: If Child extends Parent, an instance of Child will have getClass() return Child.class, never Parent.class. It is not concerned with parent classes.
+
+Null check: Calling getClass() on a null object will throw a NullPointerException, so you must perform a null check beforehand.
+Purpose: It is often used in the equals() method to ensure that two objects are not only logically equivalent but also of the exact same runtime class
