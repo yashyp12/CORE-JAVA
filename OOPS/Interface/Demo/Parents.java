@@ -1,20 +1,38 @@
+// public class Parents{
 
-public class Parents {
+//     public static void main(String[] args) {
+//         Cars c = new Cars();
+//         c.start();
+//         c.fuel();
+//         Vehiclex.company();
+        
+//     }
+// }
 
-    public static void main(String[] args) {
-        Child c = new Child();
-        System.out.println(c.a);
-    }
+// interface Vehiclex{
+//       int WHEEL = 4;
+        
+//     public abstract void start();
 
-}
+//     default void fuel(){
+//         System.out.println("uses fuels");
+   
+//     }
 
-class Parent {
+//     static void company(){
+//         System.out.println("honda");
+//     }
 
-    static int a = 23;
-}
 
-class Child extends Parent {
+// }
 
-    static int a = 43;
+// class Cars implements Vehiclex{
 
-}
+//     @Override
+//     public void start(){
+//         System.out.println("started");
+//     }
+ 
+
+    
+// }

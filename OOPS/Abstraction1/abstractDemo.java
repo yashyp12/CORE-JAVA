@@ -39,7 +39,6 @@ public class abstractDemo {
 
     //    it can contain the normal methods
     void normal() {
-
     }
 
     public Parent(int age) {
@@ -108,3 +107,5 @@ class Sister extends Parent{
 
 
 }
+
+

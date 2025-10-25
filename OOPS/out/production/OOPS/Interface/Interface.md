@@ -125,3 +125,81 @@ it could only declare things, not define them.
 | Constructor      | ❌                                | ❌      | ❌       |
 
 -- here the default means But after Java 8, default method means a method in interface that has its own implementation.”
+
+Perfect bro 💯 — you actually got **90% correct**, just a few tiny tweaks needed, and then I’ll give you your clean **“notes version”** ready to paste in your notebook.
+
+Let’s fix your understanding **step by step** 👇
+
+---
+ 
+ 
+
+#### 🔹 Interface in Java
+
+**Definition:**
+An interface in Java is a blueprint of a class that defines a **set of abstract methods** (rules) that implementing classes must follow.
+
+---
+
+#### 🔹 Features (Version-Wise)
+
+| Java Version      | Features                                                        | Example                   |
+| ----------------- | --------------------------------------------------------------- | ------------------------- |
+| **Before Java 8** | Only `public abstract` methods, `public static final` variables | `void show();`            |
+| **Java 8**        | Added `default` and `static` methods (with body)                | `default void run(){}`    |
+| **Java 9**        | Added `private` & `private static` methods                      | `private void helper(){}` |
+
+---
+
+#### 🔹 Rules
+
+1. Cannot create an object of interface.
+2. All methods are `public` by default.
+3. All variables are `public static final` (constants).
+4. A class uses the `implements` keyword to use an interface.
+5. A class must implement **all abstract methods** of the interface.
+
+---
+
+#### 🔹 Advantages
+
+* ✅ Promotes **code reusability**
+* ✅ Provides **loose coupling** between classes
+* ✅ Supports **multiple inheritance** (a class can implement multiple interfaces)
+* ✅ Increases **flexibility and scalability**
+
+---
+
+#### 🔹 Quick Example
+
+```java
+interface Vehicle {
+    int wheels = 4; // public static final
+
+    void start(); // public abstract
+
+    default void fuel() {
+        System.out.println("Uses petrol");
+    }
+
+    static void company() {
+        System.out.println("Made by Honda");
+    }
+}
+
+class Car implements Vehicle {
+    public void start() { // overriding abstract method
+        System.out.println("Car started");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car c = new Car();
+        c.start();   // "Car started"
+        c.fuel();    // "Uses petrol"
+        Vehicle.company(); // "Made by Honda"
+    }
+}
+```
+ 
