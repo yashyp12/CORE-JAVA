@@ -97,9 +97,31 @@ The method is resolved directly at compile time.
 * Runtime: When the code runs, the Java Virtual Machine (JVM) looks up the actual object's type stored in the myVehicle variable. This process is called dynamic method dispatch.
 * 
 * Execution: The JVM then executes the start() method from the correct class (e.g., the Car's implementation).
-* 
-* 
+  
 * Performance Implications
 * Overhead: This runtime lookup has a very slight performance overhead compared to a static method call, which is resolved at compile time (static dispatch). Static methods are faster because the call is "hardcoded" to a specific memory address and doesn't require this runtime lookup.
 * 
 * When It Matters: This overhead is extremely small and is not a concern for 99% of applications. However, in highly performance-critical code where every nanosecond counts (like a high-frequency trading application or the core loop of a gaming engine), developers might avoid interfaces in those specific tight loops.
+
+
+
+
+#INTERFACE
+
+* Before Java 8 Abstract: All methods were implicitly public abstract and could not have a method body. Any class that implemented the interface was required to provide a concrete implementation for every method. 
+
+## * ⚙️ **Before Java 8**
+
+In old-school Java (before Java 8), an interface was pure abstraction —
+it could only declare things, not define them.
+
+| Feature          | Before Java 8                    | Java 8 | Java 9+ |
+| ---------------- | -------------------------------- | ------ | ------- |
+| Abstract Methods | ✅                                | ✅      | ✅       |
+| Static Variables | ✅ (always `public static final`) | ✅      | ✅       |
+| Default Methods  | ❌                                | ✅      | ✅       |
+| Static Methods   | ❌                                | ✅      | ✅       |
+| Private Methods  | ❌                                | ❌      | ✅       |
+| Constructor      | ❌                                | ❌      | ❌       |
+
+-- here the default means But after Java 8, default method means a method in interface that has its own implementation.”
