@@ -7,6 +7,15 @@ public interface Engine {
     int a =23;
     void start();
 
+//    default void demo(){
+//        System.out.println("i am demo one");
+//    }
+//
+//    static void demo1(){
+////        static methods are allowed
+//        System.out.println("i am static");
+//    }
+
     void stop();
 
     void acc();

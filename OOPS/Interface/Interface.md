@@ -1,6 +1,7 @@
 ### -interface
 
-- _An interface in Java is a blueprint for a class, defining a contract of required behavior. It is not a class itself, and you cannot create an object from an interface. A class that uses an interface must provide a specific implementation for all the methods declared in that interface._
+- An interface is a collecetion of various method without definition. 
+An interface in Java is a blueprint for a class, defining a contract of required behavior. It is not a class itself, and you cannot create an object from an interface. A class that uses an interface must provide a specific implementation for all the methods declared in that interface._
 
 -
 - we can achieve multiple inheritance using interface
@@ -103,6 +104,7 @@ The method is resolved directly at compile time.
 -
 - Execution: The JVM then executes the start() method from the correct class (e.g., the Car's implementation).
 - Performance Implications
+
 - Overhead: This runtime lookup has a very slight performance overhead compared to a static method call, which is resolved at compile time (static dispatch). Static methods are faster because the call is "hardcoded" to a specific memory address and doesn't require this runtime lookup.
 -
 - When It Matters: This overhead is extremely small and is not a concern for 99% of applications. However, in highly performance-critical code where every nanosecond counts (like a high-frequency trading application or the core loop of a gaming engine), developers might avoid interfaces in those specific tight loops.
@@ -124,32 +126,17 @@ it could only declare things, not define them.
 | Static Methods   | ❌                                | ✅     | ✅      |
 | Private Methods  | ❌                                | ❌     | ✅      |
 | Constructor      | ❌                                | ❌     | ❌      |
-
--- here the default means But after Java 8, default method means a method in interface that has its own implementation.”
-
-Perfect bro 💯 — you actually got **90% correct**, just a few tiny tweaks needed, and then I’ll give you your clean **“notes version”** ready to paste in your notebook.
-
-Let’s fix your understanding **step by step** 👇
-
+ 
 ---
+
+
 
 #### 🔹 Interface in Java
 
 **Definition:**
 An interface in Java is a blueprint of a class that defines a **set of abstract methods** (rules) that implementing classes must follow.
 
----
-
-#### 🔹 Features (Version-Wise)
-
-| Java Version      | Features                                                        | Example                   |
-| ----------------- | --------------------------------------------------------------- | ------------------------- |
-| **Before Java 8** | Only `public abstract` methods, `public static final` variables | `void show();`            |
-| **Java 8**        | Added `default` and `static` methods (with body)                | `default void run(){}`    |
-| **Java 9**        | Added `private` & `private static` methods                      | `private void helper(){}` |
-
----
-
+--- 
 #### 🔹 Rules
 
 1. Cannot create an object of interface.
@@ -159,16 +146,7 @@ An interface in Java is a blueprint of a class that defines a **set of abstract 
 5. A class must implement **all abstract methods** of the interface.
 
 ---
-
-#### 🔹 Advantages
-
-- ✅ Promotes **code reusability**
-- ✅ Provides **loose coupling** between classes
-- ✅ Supports **multiple inheritance** (a class can implement multiple interfaces)
-- ✅ Increases **flexibility and scalability**
-
----
-
+  
 #### 🔹 Quick Example
 
 ```java
@@ -201,3 +179,12 @@ public class Main {
     }
 }
 ```
+
+- WE CAN EXTEND THE INTERFACES BUT THEN IN THE MAIN CLASS WE NEED TO OVERRIDE METHODS FORM BOTH OF THE INTERFACES 
+
+## **- THE IMPLEMENTS KEYWORD IS ONLY FOR CLASSES TO INTERFACE** 
+- interface to interface we will use extends like inheritance
+<!-- -->
+
+
+Annotations - is an interface internally

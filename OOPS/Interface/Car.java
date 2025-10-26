@@ -1,16 +1,16 @@
 package Interface;
 
-public class Car implements Engine, Brake {
+public class Car implements Engine, Brake,Media {
 
 
     @Override
     public void start() {
-        System.out.println("i start like normal car");
+        System.out.println("i start engine like normal car");
     }
 
     @Override
     public void stop() {
-        System.out.println("i stop like a normal car ");
+        System.out.println("i stop engine like a normal car ");
     }
 
     @Override

@@ -21,6 +21,61 @@ Yes -
 abstract class contains normaml methods 
 Yes - 
 
+
+Q - DIF BETWEEN ABSTRACTION AND ENCAPSULATION 
+> Here’s a neat, structured version you can directly add to your notes:
+
+---
+
+## **Abstraction vs Encapsulation**
+
+### **1. Abstraction**
+
+* **Definition:** Hiding unnecessary details and showing only essential features.
+* **Focus:** *What the object does*, not *how it does it*.
+* **Purpose:** Simplifies complex systems, makes code easier to use.
+* **Example:**
+
+  * Driving a car: You use pedals and steering; you don’t care how the engine works.
+  * In code:
+
+    ```java
+    interface Car {
+        void drive();
+    }
+    ```
+* **Key Point:** Hides complexity, exposes only functionality.
+
+---
+
+### **2. Encapsulation**
+
+* **Definition:** Wrapping data (variables) and methods together and restricting direct access.
+* **Focus:** *Protecting data*, controlling how it’s accessed/modified.
+* **Purpose:** Prevents unintended interference and ensures security.
+* **Example:**
+
+  * Car engine: Internal parts are hidden; you control via pedals and buttons.
+  * In code:
+
+    ```java
+    class Car {
+        private int speed;  // hidden data
+
+        public void setSpeed(int s) {
+            if (s > 0) speed = s;
+        }
+
+        public int getSpeed() {
+            return speed;
+        }
+    }
+    ```
+* **Key Point:** Hides data, provides controlled access.
+---
+ 
+
+
 - we cannot use final behind abstract class becuase it prevents from being inherited
 
 Perfect 👌 bro, here’s a **clean, note-ready explanation** of the **abstract class in Java** — formatted like how you’d write in your handwritten notes or digital notes. It covers **definition, rules, examples, and key points** — exactly the way you’ll need it for interviews + exams.
