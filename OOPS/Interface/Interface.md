@@ -25,6 +25,7 @@ It only tells what to do, not how to do it.
 * A class can implement multiple interfaces:
 
 * class SmartTV implements Remote, Bluetooth { }
+* a static methods in the interface should have body 
 
 An interface can extend another interface (yes, extends, not implements).
 
@@ -76,6 +77,12 @@ There is no object instance (this reference) to pass.
 The method is resolved directly at compile time.
 
 **Interfaces:** The lookup for the correct method at runtime adds a small amount of extra work for the JVM. For this reason, interfaces are generally not recommended in highly performance-critical code, such as the tightest loops of a gaming engine or high-frequency trading application, where every nanosecond counts.
+
+
+
+
+
+
 
 **Advantages of Using Interfaces**
 
@@ -185,6 +192,9 @@ public class Main {
 ## **- THE IMPLEMENTS KEYWORD IS ONLY FOR CLASSES TO INTERFACE** 
 - interface to interface we will use extends like inheritance
 <!-- -->
+
+
+
 
 
 Annotations - is an interface internally

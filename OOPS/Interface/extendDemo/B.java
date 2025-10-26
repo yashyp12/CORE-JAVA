@@ -4,6 +4,9 @@ package Interface.extendDemo;
 
    void greet();
 
+   public default void demo1(){
+       System.out.println("i am fro b");
+   }
 
 
 }
