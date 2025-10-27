@@ -25,9 +25,13 @@ public class Main implements B {
         Instead, the following rule, known as "subinterface takes priority,"
         applies: the default method in the more specific (child) interface overrides the one from the less specific (parent)
          */
-        A b = new Main();
-        b.funs();
+//        A b = new Main();
+//        b.funs();
 
+
+        Main obj = new Main();
+//        static methods can be call via interface name
+        A.greet();
     }
 
 }

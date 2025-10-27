@@ -10,6 +10,8 @@ An interface in Java is a blueprint for a class, defining a contract of required
 - specifies wht class is doing not about how is doing
 - Think of an interface as a “contract” or blueprint for classes.
 
+
+
 It only tells what to do, not how to do it.
 
 - Interface Rules (very important)
@@ -26,6 +28,8 @@ It only tells what to do, not how to do it.
 
 * class SmartTV implements Remote, Bluetooth { }
 * a static methods in the interface should have body 
+
+* when we are overriding methods - the access modifiers for the overriden method should be more or better , nothing less can be avaialible here
 
 An interface can extend another interface (yes, extends, not implements).
 
