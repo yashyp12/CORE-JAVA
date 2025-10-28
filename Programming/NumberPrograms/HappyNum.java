@@ -31,36 +31,42 @@ public class HappyNum {
      * Loop repeats → back to 20. Never reaches 1 → Sad Number ❌
      */
     public static void main(String[] args) {
-        System.out.println(isHappy(5));
+        // System.out.println(isHappy(5));
+        int num = 7;
+        // System.out.println(sumOfSqDigits(7));
+        // System.out.println(isHappy(num));
+
+        if(isHappy(num)){
+            System.out.println("its Happy Num");
+        }else{
+            System.out.println("Sad Num");
+        }
     }
 
+    // 7
     static boolean isHappy(int num) {
         if (num == 4) {
             return false;
         } else {
+            // 7 -> 49 op = 49
             int op = sumOfSqDigits(num);
-            while (num != 1 && num != 4) {
+            while (op != 1 && op != 4) {
+                // 49 - 16 + 81 -> 97
                 op = sumOfSqDigits(op);
             }
-            return op == 1;
+            return op==1;
         }
     }
 
     static int sumOfSqDigits(int num) {
-
         int sum = 0;
-        // int num = 12 = 144
-
         while (num != 0) {
-            // int lastDigit = num%10;
-            // sum += lastDigit*lastDigit;
 
+            // int lastDigit = num % 10;
             sum += ((num % 10) * (num % 10));
             num /= 10;
         }
-
         return sum;
-
     }
 
     // static boolean isHappy(int num)
