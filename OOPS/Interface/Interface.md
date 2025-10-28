@@ -4,6 +4,16 @@ Interface help to achive two things
  1 - Multiple Inheritance
 2 - Fully Abstraction 
 
+-     static methods of the interface can be only access by interface only 
+
+-    DEFAULT METHODS IN INTERFACE -  without breaking existing code we use default methods in the interface , it can be acccesed via instance object
+we can use this keywrod in the default method of interface 
+- 
+****Summary of this in default methods**
+* The this keyword always refers to an instance of a class, not an interface.
+* A default method is an instance method that belongs to the implementing class, just as if you had copied and pasted the code into it.
+* The default method is a convenience feature added in Java 8 for backward compatibility. It allows a developer to add a new method to an interface without forcing all pre-existing classes that implement that interface to provide their own implementation.
+* Static methods in an interface, by contrast, are called directly on the interface (Animal.info()) and cannot use this. **
 
 
 
