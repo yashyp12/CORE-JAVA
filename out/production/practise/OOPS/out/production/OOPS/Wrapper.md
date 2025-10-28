@@ -7,4 +7,6 @@
 
     - if the instance var of  refernce type has a final modifier behind it ,the val of the instance var can never change it will always refer to the same object but the value of the oject can change
 
-    
+    - final clas cannot be inherited
+    - final method can be inherited or used
+    - 

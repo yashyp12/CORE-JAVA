@@ -1,16 +1,7 @@
 ### -interface
 
-Interface help to achive two things
- 1 - Multiple Inheritance
-2 - Fully Abstraction 
-
-
-
-
-
-
 - An interface is a collecetion of various method without definition. 
-**An interface in Java is a blueprint for a class**, defining a contract of required behavior. It is not a class itself, and you cannot create an object from an interface. A class that uses an interface must provide a specific implementation for all the methods declared in that interface._
+An interface in Java is a blueprint for a class, defining a contract of required behavior. It is not a class itself, and you cannot create an object from an interface. A class that uses an interface must provide a specific implementation for all the methods declared in that interface._
 
 -
 - we can achieve multiple inheritance using interface

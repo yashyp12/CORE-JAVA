@@ -1,5 +1,4 @@
-
-import java.util.Scanner;
+ 
 
 public class HappyNum {
     // happy or sad num
@@ -31,22 +30,22 @@ Step 8: 4² + 2² = 20
 Loop repeats → back to 20. Never reaches 1 → Sad Number ❌
      */
     public static void main(String[] args) {
-        System.out.println(isHappy(new Scanner(System.in).nextInt()));
+        System.out.println(isHappy(5));
     }
 
-    static boolean isHappy(int num) {
 
-        //checking if num = 4 then return false is sad num
+    static boolean isHappy(int num) {
         if (num == 4) {
             return false;
         } else {
             int op = sumOfSqDigits(num);
+            while (num != 1 && num != 4) {
+                op = sumOfSqDigits(op);
+            }
+            return op == 1;
         }
-
-        return false;
     }
 
-    
     static int sumOfSqDigits(int num) {
 
         int sum = 0;
