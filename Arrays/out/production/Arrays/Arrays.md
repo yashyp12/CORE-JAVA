@@ -29,3 +29,13 @@ for(datatype : CollectionofArray);
 
 //      array clas has tostring method which converts the arr converting it to string
         System.out.println(Arrays.toString(arr));
+
+# Multi Dimensional Array 2D ARRAY
+METRICS
+- 1d array defined with []
+- 2d array defined with [][]
+
+[//]: # (  syntax int [][] arr = new int [rows][col];)
+
+- its an Arrays of Arrays
+- adding coluumn is not necessary 
