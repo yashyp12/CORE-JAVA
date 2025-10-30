@@ -4,6 +4,7 @@ public class Max {
         int[] arr = {1, 25, 35, 2, 54, 8};
 
         System.out.println(max(arr));
+        System.out.println(maxRange(arr,1,3));
     }
 
     // step 1 - compare the mx val with arr[1] then star compare one by one till last
@@ -20,4 +21,14 @@ public class Max {
     }
 
 
+//    pritn the max value between the rangee
+    static int maxRange(int[]arr,int start,int end){
+        int max =arr[start];
+        for(int i =start; i<=end;i++){
+            if(arr[i]>max){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
 }
