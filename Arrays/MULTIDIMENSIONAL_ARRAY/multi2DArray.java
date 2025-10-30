@@ -130,6 +130,9 @@ public class multi2DArray {
             System.out.print(Arrays.toString(a));
             System.out.println();
         }
+//        use to print multi dimensional arrya
+        System.out.println(Arrays.deepToString(arr));
+
 
 
     }
