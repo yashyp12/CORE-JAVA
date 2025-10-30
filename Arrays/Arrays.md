@@ -39,3 +39,16 @@ METRICS
 
 - its an Arrays of Arrays
 - adding coluumn is not necessary 
+
+- there are ways to print arrays 
+- toString Arrays.toString()
+- using for loop and using lengthof arr[row].len in 2d array when we dont know the num of col means size like it dynamic 
+
+# DYNAMIC ARRAYS  [array list ] - 
+- what you do when we dont know the size of the array , array has fixed size . 
+- Array list is a part of collection
+
+## **Syntax -** 
+****ArrayList<Integer> list = new ArrayList<Integer>();
+
+-- array list is a class because starts with capital letter
