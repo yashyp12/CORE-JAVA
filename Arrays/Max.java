@@ -11,6 +11,8 @@ public class Max {
     //if you found greater val add it to max otherwise move forward run the loop over the arrays
     static int max(int[] arr) {
         //imagine that array is not empty
+        if
+
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
@@ -23,6 +25,11 @@ public class Max {
 
 //    pritn the max value between the rangee
     static int maxRange(int[]arr,int start,int end){
+
+        if(end>start) return -1;
+
+        if(arr==null) return -1;
+
         int max =arr[start];
         for(int i =start; i<=end;i++){
             if(arr[i]>max){

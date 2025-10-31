@@ -12,7 +12,7 @@ public class Factors21 {
         if (num <= 1)
             return;
 
-            // prime factorisation
+        // prime factorisation
         for (int i = 1; i <= num; i++) {
             if (num % i == 0 && isPrime(i)) {
                 System.out.println(i + " ");
