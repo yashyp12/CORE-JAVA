@@ -4,6 +4,7 @@
 
 **Syntax**
 datatype [] varname = new datatype [size];
+ElementType[] variableName = new ElementType[length];
 
 - Array objects are in heap
 - jls (heap object are not continous)

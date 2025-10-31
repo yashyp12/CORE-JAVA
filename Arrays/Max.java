@@ -1,7 +1,7 @@
 public class Max {
 
     public static void main(String[] args) {
-        int[] arr = {1, 25, 35, 2, 54, 8};
+        int[] arr = {2,4,5,6,7 };
 
         System.out.println(max(arr));
         System.out.println(maxRange(arr,1,3));
@@ -11,7 +11,7 @@ public class Max {
     //if you found greater val add it to max otherwise move forward run the loop over the arrays
     static int max(int[] arr) {
         //imagine that array is not empty
-        if
+        if(arr.length == 0) System.out.println("array is empty");
 
         int max = arr[0];
         for (int i = 0; i < arr.length; i++) {

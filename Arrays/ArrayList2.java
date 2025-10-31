@@ -47,5 +47,8 @@ public class ArrayList2 {
 //            System.out.print(list.get(i) + " "); //passing index here
 //        }
 
+
+
+
     }
 }
