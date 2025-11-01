@@ -10,6 +10,7 @@ public class CustomArrayList {
 //        System.out.println(arr);
 //        System.out.println(list);
 
+//    arraylist wihtout using generics
         ArrayList list = new ArrayList();
 //        list.add(45);
 //        list.get(0);
@@ -92,6 +93,11 @@ public class CustomArrayList {
         }
 //        it wil show size 17 only becasue the actual size is what you insert
         System.out.println(list);
+
+//        this internal array will make sure that we will only add integer type into it
+     // HER ETEH Integer is a generic and we can only add classes in the generics
+        ArrayList<Integer> list1 = new ArrayList<>();
+
     }
 
     
