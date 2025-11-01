@@ -8,7 +8,8 @@ public class palindroString {
     }
 
     static boolean isPalindrome(String str) {
-if(str.length()==0 || str==null) return true;
+        if (str == null || str.length() == 0)
+            return true;
 
         str = str.toLowerCase();
         // here the lenght is a function but in the array its a variable

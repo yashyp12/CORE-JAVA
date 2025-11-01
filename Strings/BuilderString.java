@@ -20,5 +20,7 @@ public class BuilderString {
         System.out.println(builder.toString());
         builder.reverse();
         System.out.println("after reverse " + builder);
+
+
     }
 }
