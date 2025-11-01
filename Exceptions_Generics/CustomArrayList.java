@@ -83,8 +83,16 @@ public class CustomArrayList {
         list.add(5);
         list.add(9);
 
+        System.out.println( list.size);
 //        we are printing our custom class
         System.out.println(list);
+
+        for(int i =0; i<14; i++){
+        list.add(2*i);
+        }
+//        it wil show size 17 only becasue the actual size is what you insert
+        System.out.println(list);
     }
+
     
 }
