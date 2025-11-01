@@ -106,4 +106,15 @@ String result = sb.toString(); // Converts to standard String "and Middle"
 `
 - StringBuilder directly inherits from the Object class.
 - Both String and StringBuilder ultimately inherit from the fundamental Object class (the root of all Java classes).
-- 
+
+
+
+# Methods in Strings
+ - 
+
+
+**Regex -** 
+- Regular Expressions (Regex) in Java are a powerful tool used for pattern matching and text manipulation. They are essentially a specialized mini-language used to define search patterns.
+ - sIn Java, you primarily use the Pattern and Matcher classes from the java.util.regex package to work with Regex.
+
+
