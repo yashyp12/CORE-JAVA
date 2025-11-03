@@ -39,5 +39,7 @@ public class ArrayList21 {
 
          System.out.println("after set " + list);
 
+         System.out.println(list.get(0));
+
     }
 }

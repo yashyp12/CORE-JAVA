@@ -1,5 +1,7 @@
 package Strings;
 
+import java.text.DecimalFormat;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,6 +17,11 @@ public class Main {
 //        object is not changing we are creating a new obj
         a = "PATIL";
         System.out.println(a);
+
+
+//        rounding off
+        DecimalFormat ddf = new DecimalFormat("0.00000");
+        System.out.println(ddf.format(7.29));
 
     }
 

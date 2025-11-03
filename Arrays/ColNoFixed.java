@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class ColNoFixed {
     //here we dont fixed the column

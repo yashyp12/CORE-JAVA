@@ -17,8 +17,14 @@ we can use this keywrod in the default method of interface
 
 
 ## Main method in interface ? 
+-> we can add main method in the interface because its static method jvm wil run it
 -> 
 
+# DIFF  IN ABSTRACT CLASSES AND INTERFACE 
+-> abtract classes contains constructor which invokes when child class object get invoked
+-> interface does not contains the constructor
+-> class can extract only single abstract classs
+-> but class can implement multiple interface
 
 
   

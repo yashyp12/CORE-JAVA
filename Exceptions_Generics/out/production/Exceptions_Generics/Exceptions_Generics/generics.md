@@ -33,3 +33,12 @@ https://docs.oracle.com/javase/tutorial/java/generics/types.html
 * Generics solve this by:
 * Type Safety at Compile Time: The compiler enforces that only objects of a specific type can be added to a generic collection. If you try to add the wrong type, the code won't compile.
 * No Explicit Casting: You don't need to manually cast the retrieved objects back to their original type. 
+
+
+
+# Wildcards - we can restrict what types of item we can provide 
+public void getList(List<Number> list){
+// do somehting
+// here we can only pass numbeer typep 
+// if we want subclassses as well then ddo add ? extends Number class
+}

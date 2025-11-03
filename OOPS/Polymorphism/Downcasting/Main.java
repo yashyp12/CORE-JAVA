@@ -1,4 +1,4 @@
-/*
+package Polymorphism.Downcasting;/*
  * Ramesh r = new Suresh();  // Upcasting (ok)
 Suresh s = (Suresh) r;    // Downcasting (safe)
 
@@ -22,7 +22,10 @@ public class Main {
 
     public static void main(String[] args) {
         Suresh obj = new Ganesh(); // upcasting
+
+//          You can only downcast if the object’s real type is the subclass.
         Ramesh obj1 = obj;  // upcasting
+
         Suresh obj2 = (Suresh) obj1; // downcasting
         Ganesh obj3 = (Ganesh) obj2; //downcasting
 

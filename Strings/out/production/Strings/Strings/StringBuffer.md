@@ -9,6 +9,36 @@
 
 ---
 
+
+## Advantages
+1 - mutable - we can add obj without creating new one
+2 - more efficient - 
+3 - thread safe - 
+in java multiple threadsa (process) are works in java on same data 
+- when thread 1 working on data it is prevent any other thread to wroking on this data
+- that makes it slower
+- BY DEFAULT ITS CAPASITY IS 16 but its dynamic doubles as per formula when grows
+
+## dIFF between string buffer and builder 
+- string builder is not thread safe
+- if we working on single theead usee builder
+
+
+
+## Constructor in String BuffER 
+    //CONSTURCTOR 1
+        StringBuffer sb = new StringBuffer();
+        sb.append("dem44444444444444444444444o");
+        // intial capacity of buffer is 16 but after adding data
+        // it has formula (capacity*2) +2   - so it becoesmes 34
+        System.out.println(sb.capacity());
+
+//        constructor no 2
+        StringBuffer sb2 = new StringBuffer("Yash Patil");
+
+//        constructor no 3  - we can specify the capasity there
+        StringBuffer sb3 = new StringBuffer(30);
+
 ## 2. Why StringBuffer?
 - Every time you modify a `String`, a **new object** is created in memory.
 - This is **inefficient** when you perform multiple modifications (e.g., concatenation in loops).
@@ -146,3 +176,5 @@ So yes — it behaves dynamically like `ArrayList`, but instead of holding *obje
 Key difference: `ArrayList` doubles roughly every 50%–100% of capacity, while `StringBuffer` uses this precise formula `(old * 2) + 2`.
 
 When the buffer grows, a **new larger char[]** is created internally, the old data is copied there, and the reference still points to the same object (no new `StringBuffer` instance).
+
+

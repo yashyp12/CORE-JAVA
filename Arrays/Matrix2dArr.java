@@ -12,14 +12,29 @@ public class Matrix2dArr {
 
         // int[][] arr = { { 1, 2, 3 }, { 2, 3, 6 }, { 5, 6, 6 } };
 
-        for (int row = 0; row < arr.length; row++) {
+        // for (int row = 0; row < arr.length; row++) {
 
-            // taking input in array
-            for (int col = 0; col < arr[row].length; col++) {
-                arr[row][col] = sc.nextInt();
-            }
-            System.out.println();
-        }
+        //     // taking input in array
+        //     for (int col = 0; col < arr[row].length; col++) {
+        //         arr[row][col] = sc.nextInt();
+        //     }
+        //     System.out.println();
+        // }
+
+
+// adding the data into the arrya
+
+
+// for(int row =0; row<arr.length; row++){
+
+//     for(int col =0; col<arr[row].length; col++){
+//         arr[row][col] = sc.nextInt(); 
+//     }
+//     System.out.println();
+// }
+
+
+
 
         // printing sum of each row seperaely
         for (int row = 0; row < arr.length; row++) {
