@@ -35,7 +35,7 @@ public class StrongNum {
     //         fact *= num;
     //         num--;
     //     }
-    //     return fact;
+    //     return fact;ss
     // }
     // ***************
     public static void main(String[] args) {
