@@ -8,7 +8,6 @@ public class Main {
         int[] arr = {2, 5, 6, 4};
         String name = "Yash Patil";
 
-
         String b = "Yash";
 
         String a = "Yash";

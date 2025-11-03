@@ -22,6 +22,7 @@ public class NumContainArr {
             }
         }
 
+        
         if (foundIndex >= 0) {
             System.out.println("num found on index " + foundIndex);
         } else {

@@ -9,7 +9,7 @@ public class fibonaciiNumber {
         int n2 = 1;
         int n3;
 
-        while (n1 <= num) {
+        while (n1 < num) {
 
             if (n1 == num)
                 return true;
