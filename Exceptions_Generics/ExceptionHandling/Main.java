@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) throws MyException {
         int a = 5;
         int b = 0;
+
         try {
 //            int c = a / b;
 //            divide6(a, b);
@@ -12,10 +13,10 @@ public class Main {
 //            throw new Exception("just for fun");
 
             String name = "Yash";
-            if(name.equals("Yash")){
+            if (name.equals("Yash")) {
                 throw new MyException("name is yash");
             }
-        }  catch(MyException e){
+        } catch (MyException e) {
 //            throw new MyException("nAME IS YASH");
             System.out.println(e.getMessage());
         }
