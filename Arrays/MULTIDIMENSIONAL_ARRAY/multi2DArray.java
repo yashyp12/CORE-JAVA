@@ -20,7 +20,6 @@ public class multi2DArray {
 //        }
 
 
-
         /*
 
         1 2 3
