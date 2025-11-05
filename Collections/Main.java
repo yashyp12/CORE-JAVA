@@ -12,6 +12,11 @@ public class Main {
         List<Integer> list2 = new LinkedList<>();
 
         list.add(12);
+        list2.add(24);
+        list2.add(35);
+        list2.add(256);
+
         System.out.println(list);
+        System.out.println(list2);
     }
 }
