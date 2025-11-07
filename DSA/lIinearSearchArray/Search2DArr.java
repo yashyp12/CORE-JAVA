@@ -3,7 +3,6 @@ package DSA.lIinearSearchArray;
 import java.util.Arrays;
 
 public class Search2DArr {
-
     /*
     for finding max val we can take MIN VAL
     nd for findngf min val we can take MAX VAL
@@ -27,7 +26,6 @@ public class Search2DArr {
 //       System.out.println(Arrays.toString(ans));
 
        System.out.println(max2DArr(arr));
-
 
     }
 

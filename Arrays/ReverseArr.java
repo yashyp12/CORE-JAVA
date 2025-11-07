@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class ReverseArr {
 
-    public static void main() {
+    public static void main(String[] args) {
         int[] arr = {1, 2, 36, 5, 9};
 //    swap(arr,0,4);
         reverseARR(arr);

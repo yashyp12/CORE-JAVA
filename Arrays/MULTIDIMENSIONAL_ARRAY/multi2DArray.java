@@ -18,8 +18,6 @@ public class multi2DArray {
 //        for(int num:arrx){ //for every element in array, print the element
 //            System.out.print(num + " "); //num represents the element of the array
 //        }
-
-
         /*
 
         1 2 3
@@ -131,7 +129,6 @@ public class multi2DArray {
         }
 //        use to print multi dimensional arrya
         System.out.println(Arrays.deepToString(arr));
-
 
 
     }
