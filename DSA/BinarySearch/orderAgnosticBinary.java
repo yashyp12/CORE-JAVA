@@ -23,7 +23,6 @@ HOW TO FIND IN WHICH ORDER THE ARRAY IS SORTED ?
 
         boolean isAsc = arr[start] < arr[end];
 
-
         while (start <= end) {
 
             int mid = start + (end - start) / 2;

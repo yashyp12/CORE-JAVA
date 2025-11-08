@@ -7,6 +7,8 @@ The **Java Collection Framework** is a **set of classes and interfaces** that he
 Each container (class) stores data differently depending on your needs (ordered, unique, sorted, etc.).
 
 
+
+
 ## 🧩 Structure of the Collection Framework
 
 At the top level, JCF has **interfaces** and **classes**.
