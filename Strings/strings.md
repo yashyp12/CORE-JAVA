@@ -118,3 +118,144 @@ String result = sb.toString(); // Converts to standard String "and Middle"
  - sIn Java, you primarily use the Pattern and Matcher classes from the java.util.regex package to work with Regex.
 
 
+
+## toString()
+The String class overrides the equals() method from the Object class.
+It does not check memory — it checks whether the sequence of characters inside both strings is the same.
+
+Excellent — this is the **exact** confusion that almost everyone has when learning Java strings.
+Let’s clear it once and for all — no shortcuts, no tricks, just logic.
+
+---
+
+## 💡 The Root of Confusion
+
+You know that:
+
+```java
+String s1 = "Hello";
+String s2 = "Hello";
+System.out.println(s1 == s2);      // true
+System.out.println(s1.equals(s2)); // true
+```
+
+Both are true here — so people think `"=="` and `"equals"` are the same.
+
+But then:
+
+```java
+String s3 = new String("Hello");
+String s4 = new String("Hello");
+System.out.println(s3 == s4);      // false
+System.out.println(s3.equals(s4)); // true
+```
+
+Now suddenly `"=="` gives `false` but `"equals"` gives `true`.
+Let’s explain **why** this happens.
+
+---
+
+## 🧩 Step 1: What `"=="` does
+
+`==` checks **whether both variables refer to the exact same memory address** (same object).
+
+---
+
+## 🧩 Step 2: What `equals()` does for Strings
+
+The `String` class **overrides** the `equals()` method from the `Object` class.
+It does **not** check memory — it checks whether the *sequence of characters* inside both strings is the same.
+
+Here’s roughly how it’s implemented inside Java’s String class:
+
+```java
+public boolean equals(Object obj) {
+    if (this == obj)
+        return true;
+    if (obj instanceof String) {
+        String other = (String) obj;
+        return this.value.equals(other.value); // compares characters
+    }
+    return false;
+}
+```
+
+So `equals()` checks **content**, not **reference**.
+
+---
+
+## 💥 Step 3: Why `==` sometimes works for Strings
+
+Because of **String constant pool**.
+
+### When you write:
+
+```java
+String s1 = "Hello";
+String s2 = "Hello";
+```
+
+→ Java stores `"Hello"` only once in a special memory area called the **String Constant Pool (SCP)**.
+Both `s1` and `s2` point to that same literal.
+
+So:
+
+```java
+s1 == s2 → true  (same address)
+s1.equals(s2) → true (same characters)
+```
+
+---
+
+### But when you use `new`:
+
+```java
+String s3 = new String("Hello");
+String s4 = new String("Hello");
+```
+
+→ Each `new` creates a new object in **heap memory**, not in the pool.
+They both contain the same text, but live in different memory locations.
+
+So:
+
+```java
+s3 == s4 → false  (different objects)
+s3.equals(s4) → true (same text)
+```
+
+---
+
+## 🔍 Step 4: So what’s the rule?
+
+| Comparison Type | Checks                              | When True                                 | Best Used For                            |
+| --------------- | ----------------------------------- | ----------------------------------------- | ---------------------------------------- |
+| `==`            | Reference equality (memory address) | When both references point to same object | Primitives, object identity              |
+| `equals()`      | Content equality                    | When text/data is same                    | Strings, wrapper classes, custom classes |
+
+---
+
+## 🧠 In Short (Write This in Notes)
+
+* `"=="` → checks **object reference** (same memory or not)
+* `.equals()` → checks **string content** (same characters or not)
+* String literals are stored in **String Constant Pool**, so `"=="` *might* return true if both refer to same literal.
+* But with `new String()`, `"=="` will always be false (different objects).
+* Always use `.equals()` when comparing string **values**.
+
+---
+
+### ✅ Quick Example Summary
+
+```java
+String s1 = "Boss";
+String s2 = "Boss";
+String s3 = new String("Boss");
+
+System.out.println(s1 == s2);      // true  → both point to same literal in SCP
+System.out.println(s1.equals(s2)); // true  → same content
+
+System.out.println(s1 == s3);      // false → s3 is in heap
+System.out.println(s1.equals(s3)); // true  → same content
+```
+ 

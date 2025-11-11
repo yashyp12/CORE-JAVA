@@ -24,15 +24,15 @@ public class ObjectDemo {
         return super.clone();
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+//    @Override
+//    public String toString() {
+//        return super.toString();
+//    }
 
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
-    }
+//    @Override
+//    protected void finalize() throws Throwable {
+//        super.finalize();
+//    }
 
 
     public static void main(String[] args) {

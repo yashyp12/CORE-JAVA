@@ -211,3 +211,13 @@ CopyOnWriteArrayList<Integer> list = new CopyOnWriteArrayList<>();
 ---
 
  
+| Feature                        | `Arrays.asList()`                      | `List.of()`                              |
+| ------------------------------ | -------------------------------------- | ---------------------------------------- |
+| Available Since                | Java 1.2                               | Java 9                                   |
+| Mutability                     | Fixed-size but elements can be changed | Fully immutable (cannot change anything) |
+| Add/Remove                     | ❌ Not allowed                          | ❌ Not allowed                            |
+| Modify existing elements (set) | ✅ Allowed                              | ❌ Not allowed                            |
+| Backed by Array                | ✅ Yes                                  | ❌ No (it’s its own list)                 |
+| Allows `null`                  | ✅ Yes                                  | ❌ No (throws `NullPointerException`)     |
+| Syntax                         | `Arrays.asList("A", "B", "C")`         | `List.of("A", "B", "C")`                 |
+

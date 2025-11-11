@@ -66,3 +66,14 @@ Calculation Formula: newCapacity = oldCapacity + (oldCapacity / 2) (or oldCapaci
 The new capacity will be 1500.
 
 
+
+
+## /*Arrays.asList() — Simple Explanation
+
+Think of it like this:
+It doesn’t create a new independent ArrayList,
+it just wraps your existing array inside a fixed-size list view.
+
+ */
+
+
