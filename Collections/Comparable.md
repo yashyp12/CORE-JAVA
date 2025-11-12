@@ -54,3 +54,7 @@ Collections.sort(listOfStudents);
 ---
 
 Would you like me to now explain the same way for **Comparator** (what it is and why it’s used)?
+
+
+Comparable is used for single sorting of objects
+Comparator is used for multiple sorting of objects

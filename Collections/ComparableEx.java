@@ -15,6 +15,7 @@ public class ComparableEx {
         Student Yash = new Student(101, 36.54f);
         Student Rahul = new Student(102, 89.76f);
 
+        
         if (Yash.compareTo(Rahul)<0) {
             System.out.println("RAHUL HAS MORE MARKS ");
         }
