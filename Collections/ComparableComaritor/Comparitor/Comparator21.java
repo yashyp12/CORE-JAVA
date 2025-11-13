@@ -1,4 +1,4 @@
-package Collections;
+package Collections.ComparableComaritor.Comparitor;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -23,7 +23,6 @@ class MyComparator implements Comparator<Integer>{
     @Override
     public int compare(Integer o1, Integer o2) {
 //        now we want an ascending num so this method schould return positive
-
         return o1-o2;
     }
 }
@@ -40,7 +39,10 @@ public class Comparator21 {
         list.add(4);
 
 
+//        sort the leemnt in ascending
         list.sort(null);
+
+
         System.out.println(list);
 
         List<String> words = Arrays.asList("Banana","apple","date");
@@ -48,6 +50,10 @@ public class Comparator21 {
         //comparator itnerface has comapre method , which comapres teh two objects of same type
 //        System.out.println(words);
         words.sort(new StringLengthComparator());
+//        words.sort(a,b) -> a.length() - b.length();
+
+
+
 
     }
 }

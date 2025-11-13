@@ -12,5 +12,6 @@ public class LinkedListExam {
        System.out.println(list);
 
 
+
     }
 }
