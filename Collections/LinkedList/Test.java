@@ -40,6 +40,7 @@ public class Test {
 
 
 
+
         LinkedList<String> animals = new LinkedList<>(Arrays.asList("cat", "dog", "monkey"));
         LinkedList<String> animalsToRemove = new LinkedList<>(Arrays.asList("cat", "dog", "lion"));
 
