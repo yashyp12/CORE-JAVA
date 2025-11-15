@@ -13,6 +13,7 @@ list3.add(69);
 list3.add(75);
        System.out.println(list3);
 list3.removeFirst();
-       System.out.println(list3);
+
+       System.out.println(list3.reversed() );
     }
 }
