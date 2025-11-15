@@ -39,8 +39,6 @@ public class Test {
         linkedList.pollLast();
 
 
-
-
         LinkedList<String> animals = new LinkedList<>(Arrays.asList("cat", "dog", "monkey"));
         LinkedList<String> animalsToRemove = new LinkedList<>(Arrays.asList("cat", "dog", "lion"));
 

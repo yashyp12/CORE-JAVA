@@ -5,12 +5,8 @@ import java.util.LinkedList;
 public class LinkedListExam {
 
    public static void main(String[] args) {
-
-       LinkedList<Integer> list = new LinkedList<>();
-
-       list.add(23);
-       System.out.println(list);
-
+ LinkedList<Integer> list3 = new LinkedList<>();
+       System.out.println(list3);
 
 
     }
