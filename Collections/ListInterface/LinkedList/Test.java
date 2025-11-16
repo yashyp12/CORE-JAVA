@@ -1,8 +1,7 @@
-package Collections.LinkedList;
+package Collections.ListInterface.LinkedList;
 
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
 public class Test {
 
