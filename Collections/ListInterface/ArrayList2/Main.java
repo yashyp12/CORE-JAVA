@@ -20,7 +20,7 @@ public class Main {
 
 
 //      get the capasity of the arrylist using reflection
-
+//
 //        List<String> list1 = new ArrayList<>();
 //        System.out.println(list1.getClass().getName());
 //
@@ -134,14 +134,6 @@ Because this list is just a view of the array, not a true dynamic list.
 
 
 
-
-
-
-
-
-
-//
-
 //        coonverting list to array
 //      listm.toArray(new Integer[0]); //it will create new array
 
@@ -167,13 +159,6 @@ Because this list is just a view of the array, not a true dynamic list.
 //        System.out.println(Arrays.toString(arr1));
 
 // int[]arr4 = names.toArray(new int[0]); fails because teh toArray only works with objects
-
-
-
-
-
-
-
 
 
 

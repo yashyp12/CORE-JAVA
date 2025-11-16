@@ -40,13 +40,14 @@ public class Main {
 /*The SortedSet interface extends the basic Set interface and adds methods specific to ordering, such as: */
         SortedSet<Integer> setx = new TreeSet<>();
 
-
         setx.add(2);
         setx.add(4);
         setx.add(6);
         setx.add(1);
         setx.add(7);
         System.out.println(setx); // sorted list
+
+
 
 
     }
