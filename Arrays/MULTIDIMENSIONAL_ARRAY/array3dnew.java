@@ -1,7 +1,5 @@
 package MULTIDIMENSIONAL_ARRAY;
-
-import javax.lang.model.util.Elements;
-
+ 
 public class array3dnew {
 //     Accessing Elements of Three-Dimensional Arrays
 // Elements in three-dimensional arrays are commonly referred by x[i][j][k] where 'i' is the array number, 'j' is the row number and 'k' is the column number. 

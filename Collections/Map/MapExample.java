@@ -1,6 +1,7 @@
 package Collections.Map;
 
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class MapExample {
