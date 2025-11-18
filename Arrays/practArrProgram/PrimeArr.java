@@ -4,6 +4,10 @@ public class PrimeArr {
 
     public static void main(String[] args) {
         int[] arr = {12, 65, 3, 6};
+
+        String[]arr2 = {"yash","patil"};
+
+
     }
 
     static boolean isPrime(int n){
