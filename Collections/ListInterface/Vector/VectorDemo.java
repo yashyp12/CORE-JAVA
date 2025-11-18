@@ -32,7 +32,7 @@ vect.add(1);
             System.out.println(integer);
         }
 
-        
+
     }
 }
 
