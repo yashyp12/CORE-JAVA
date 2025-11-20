@@ -29,3 +29,35 @@ Vector(int initialCapacity): Creates a vector with a specified initial capacity.
 Vector(int initialCapacity, int capacityIncrement): Creates a vector with an initial capacity and capacity increment (how much the vector should grow when its capacity is exceeded).
 
 Vector(Collection<? extends E> c): Creates a vector containing the elements of the specified collection.
+
+
+
+Here is the text from the image, listing the commonly used methods of the Vector class in Java:
+
+**💻 Methods in Vector**
+
+add(E e): Adds an element at the end.
+
+add(int index, E element): Inserts an element at the specified index.
+
+get(int index): Retrieves the element at the specified index.
+
+set(int index, E element): Replaces the element at the specified index.
+
+remove(Object o): Removes the first occurrence of the specified element.
+
+remove(int index): Removes the element at the specified index.
+
+size(): Returns the number of elements in the vector.
+
+isEmpty(): Checks if the vector is empty.
+
+contains(Object o): Checks if the vector contains the specified element.
+
+clear(): Removes all elements from the vector.
+
+
+**Synchronization and Performance**
+Since Vector methods are synchronized, it ensures that only one thread can access the vector at a time. This makes it thread-safe but can introduce performance overhead in single-threaded environments because synchronization adds locking and unlocking costs.
+
+In modern Java applications, ArrayList is generally preferred over Vector when synchronization isn't required. For thread-safe collections, the CopyOnWriteArrayList or ConcurrentHashMap from the java.util.concurrent package is often recommended instead.
