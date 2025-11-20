@@ -6,7 +6,7 @@ public class DuplicateElArr {
 		// TODO Auto-generated method stub
 
 		int[] arr = { 23, 4, 35,35, 6, 6, 7, 23, 7 };
-
+	 
 
 		for(int i =0; i<arr.length;i++) {
 			
