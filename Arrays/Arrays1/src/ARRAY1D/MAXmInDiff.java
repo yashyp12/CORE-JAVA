@@ -17,11 +17,11 @@ public class MAXmInDiff {
 			if(arr[i] >max) {
 		
 				max = arr[i];
-				System.out.println("max found is " + max);
+			 
 			}else if(arr[i]<min) {
 			
 				min = arr[i];
-				System.out.println("min found is " + min);
+			 
 			}
 		}
 		

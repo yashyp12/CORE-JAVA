@@ -7,12 +7,15 @@ public class CountNumGreater {
 //		Q11: Count numbers greater than 10
 		
 		int []arr = {2,4,5,2,11,25,36,5};
+		int count = 0;
 		
 		for(int i =0; i<arr.length;i++) {
 			if(arr[i]>=10) {
-				System.out.println(i);
+				count++;
 			}
 		}
+		
+		System.out.println("count is " + count);
 
 }
 }
