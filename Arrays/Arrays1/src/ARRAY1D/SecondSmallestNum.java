@@ -4,17 +4,26 @@ public class SecondSmallestNum {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[]arr = {4,5,3,1,6};
+		int[]arr = {2,1,1,6,3};
 		
-		int Smallest = arr[0];
-		int SecondSmallest = arr[0];
+		int Smallest = Integer.MAX_VALUE;
+		int SecondSmallest = Integer.MAX_VALUE;
+		
+		if(arr.length<2) {
+			System.out.println("array dont have second smallest val ");
+			return;
+		}
+		
 		
 		for(int i =0;i<arr.length;i++) {
+			 
 			if(arr[i]<Smallest) {
 				SecondSmallest = Smallest;
 				Smallest = arr[i];
-			}else if(arr[i]<SecondSmallest) {
+			}else if(arr[i]>Smallest && arr[i]<SecondSmallest){
 				SecondSmallest = arr[i];
+			}else if(arr[i]==Smallest) {
+				continue;
 			}
 		}
 		
