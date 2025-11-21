@@ -15,7 +15,7 @@ public class MaxElementArr {
 		
 		int max = arr[0]; //21
 		
-		for(int i =0; i<arr.length;i++) {
+		for(int i =1; i<arr.length;i++) {
 			if(arr[i]>max) {
 				max = arr[i];
 			}
