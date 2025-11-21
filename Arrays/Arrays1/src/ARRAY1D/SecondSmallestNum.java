@@ -22,10 +22,13 @@ public class SecondSmallestNum {
 				Smallest = arr[i];
 			}else if(arr[i]>Smallest && arr[i]<SecondSmallest){
 				SecondSmallest = arr[i];
-			}else if(arr[i]==Smallest) {
-				continue;
-			}
+			} 
 		}
+		
+		if(SecondSmallest == Integer.MAX_VALUE) {
+			System.out.println("no second smallest num");
+		}
+
 		
 		System.out.println("Smallest is " + Smallest + " Second Smallest is " + SecondSmallest);
 	}
