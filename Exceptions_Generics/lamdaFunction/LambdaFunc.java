@@ -14,7 +14,7 @@ public class LambdaFunc {
         }
 //        arr.forEach((item) -> System.out.print(item * 2));
 
-
+arr.forEach(System.out::println);
 //        Consumer<Integer> fun = (item) -> System.out.println(item * 2);
 //        arr.forEach(fun);
 
