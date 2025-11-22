@@ -6,7 +6,7 @@ public class isArrStrictlyIncreasing {
 		int[] arr = { 5,4,3,2,1,3 };
 
 		System.out.println(isStrictlyDecreasing(arr));
-
+		
 	}
 
 	
