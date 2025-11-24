@@ -6,7 +6,7 @@ public class printDuplicationElement {
 
 	// Q24. Print all duplicate elements once (avoid repea􀆟ng same duplicate).
 	public static void main(String[] args) {
-		int[] arr = { 2, 4, 5, 3, 2, 5, 3 ,2,4,5,6,3};
+		int[] arr = { 2, 4, 5, 3, 2, 5, 3 ,2,4,5,6,3,6};
 
 		// approach - step 1 -
 		/*
@@ -25,14 +25,14 @@ public class printDuplicationElement {
 					appearedBefore = true;
 					break;
 				}
-			}
+			}	
 
 			if (appearedBefore) {
 				continue; // skip because it already checked by another one
 			}
 
 			boolean appearedLater = false;
-			for (int j = 0; j < arr.length; j++) {
+			for (int j = i+1; j < arr.length; j++) {
 
 				if (arr[i] == arr[j]) {
 					appearedLater = true;
