@@ -4,7 +4,7 @@ public class PrimeNum {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-int num = 13;
+int num = 2;
 
 int den = 2;
 //System.out.println(isPrime(num,den));
