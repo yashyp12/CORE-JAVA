@@ -1,6 +1,6 @@
 package Exceptions_Generics.ExceptionHandling2.CheckedException;
 
-public class InterupttedExxception {
+public class InterupttedExxceptionx {
 
 
     static void main(String[] args) throws InterruptedException {
