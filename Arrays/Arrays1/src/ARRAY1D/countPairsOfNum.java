@@ -12,7 +12,7 @@ public class countPairsOfNum {
 		for(int i =0;i<arr.length;i++) {
 		
 			for(int j  = i+1;j<arr.length;j++) {
-				if(j<i) break;
+				 
 				
 				if(arr[i]+arr[j]==k) {
 					System.out.println("match found (" + arr[i] + " " + arr[j] + ")");
