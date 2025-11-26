@@ -42,10 +42,14 @@ class Employee extends Address implements Cloneable{
         return super.clone();
     }
 
+    
 }
 
 
 public class CloneObjNew {
+
+
+
 
     static void main(String[] args) {
 
