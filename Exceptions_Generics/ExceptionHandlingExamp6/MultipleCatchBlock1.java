@@ -41,11 +41,23 @@ public class MultipleCatchBlock1 {
 //        }
 
 
-        
+//        examp 3
+        try{
+            System.out.println("outer tr");
+            Thread.sleep(1000);
 
-
-
-
+            try{
+                System.out.println("inner try");
+                System.out.println(10/0);
+            }catch (NullPointerException e){
+                System.out.println("inner catch");
+            }
+        }
+        catch (InterruptedException e){
+            System.out.println("outer catch 1");
+        }catch (RuntimeException e ){
+            System.out.println("outer  catch 2");
+        }
 
 
     }
