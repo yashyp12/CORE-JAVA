@@ -13,7 +13,7 @@ public class Student {
     }
 
     public double calcPercentage(int marks,int total) throws Exception{
-        return (marks/total)*100;
+        return ((double) marks /total)*100;
     }
 
     public String toString(){
