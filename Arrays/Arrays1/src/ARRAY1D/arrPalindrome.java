@@ -7,7 +7,6 @@ public class arrPalindrome {
 		int []arr = {1,2,3,2,1};
 		System.out.println(isPalindromeArr(arr));
 		
-		
 	}
 	
 	static boolean isPalindromeArr(int []arr) {
