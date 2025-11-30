@@ -11,13 +11,13 @@ public class ExampleFinally {
 
             try {
                 System.out.println("try : " + i);
-                if (i % 2 == 0) System.out.println(10 / 0);
+                 if (i % 2 == 0) System.out.println(10 / 0);
 
             } catch (ArithmeticException e) {
                 System.out.println("catch :" + i);
-                System.exit(0);
+                // System.exit(0);
 //                break;
-//                continue;
+                continue;
             } finally {
                 System.out.println("finally " + i);
 
