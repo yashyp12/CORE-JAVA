@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 class DatabaseConnection{
-	private final Strign DATA_BASE_NAME;
+	private final String DATA_BASE_NAME;
 	private final String DB_USER;
-	private final DB_PASSWORD;
+	private final String DB_PASSWORD;
 
 
 	private static DatabaseConnection obj; // null
@@ -64,19 +64,80 @@ public void displayUserAccount(){
 	System.out.println("UserName :"+username);
 	System.out.println("Contact : "+ contact);
 	System.out.println("Email : "+email);
+	System.out.println("Password : "+password);
 }
 }
 
 class Instagram{
 
-	AccountUser user;
+	 AccountUser user ; // null
+	 boolean flag = false;
 
-	String url = “jdbc:mysql://localhost:3306/testdb”;
+	//  db connection build
+	 {
 
-	String DB_NAME = System.getenv("dbUser");
-	String DB_PASS = System.getenv("dbPass");
+		DatabaseConnection obj1 = DatabaseConnection.getInstance();
+		final String DATA_BASE_NAME = System.getenv("dbUser");
+		String url = "jdbc:mysql://localhost:3306/testdb" + DATA_BASE_NAME;
+		String dbUser = "scott";
+		String dbPass = "tiger";
+		obj1.getConnection(url, dbUser, dbPass);
 
-	DatabaseConnection.getInstance(url,DB_USER,DB_PASS).getConnection();
+	 }
 
 
+	 public void launchApplication(){
+		for (;;) {
+
+			System.out.println(" Welcome to Instagram ");
+			System.out.println("1 Login ");
+			System.out.println("2 Create Account ");
+			System.out.println("Enter your opt : ");
+			int opt = new Scanner(System.in).nextInt();
+
+			switch(opt){
+				case 1 -> login();
+				case 2 -> createAccount();
+				default -> System.out.println("INVALID OPTION");
+			}
+		}
+	 }
+
+
+	 public void login(){
+		System.out.println("LOGIN MODOULE");
+		if(user == null){
+			System.out.println("CREATE YOUR ACCOUNT FIRST");
+			return;
+		}
+		System.out.println("\n LOGIN MODULE ");
+		if(flag){
+			features();
+		}
+
+	System.out.println("Usernaem : ");
+	String username = new Scanner(System.in).nextLine();
+	System.out.println("Password : ");
+	String password = new Scanner(System.in).next();
+	
+	if(username.equals(user.username)&&password.equals(user.password)){
+		System.out.println("LOGIN SUCCESSFULLY !");
+		System.out.println("Do you wanted to save an credentials ? y/n");
+		String resp = new Scanner(System.in).nextLine();
+		if(resp.equals("y")){
+			flag = true;
+		}
+	}
+
+
+	 }
+
+	 static void features(){
+
+	 }
+
+	 static void createAccount(){
+		
+	 }
+	
 }
