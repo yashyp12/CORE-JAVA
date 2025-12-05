@@ -178,3 +178,16 @@ Key difference: `ArrayList` doubles roughly every 50%–100% of capacity, while 
 When the buffer grows, a **new larger char[]** is created internally, the old data is copied there, and the reference still points to the same object (no new `StringBuffer` instance).
 
 
+
+## OUTSIDE THE STRING CLASS 
+The equals() method originally comes from the Object class.
+
+In Object class, it just does:
+
+public boolean equals(Object obj) {
+    return (this == obj);
+}
+
+
+So by default, it only checks memory address (reference) —
+same thing as ==.
