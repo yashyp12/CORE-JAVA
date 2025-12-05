@@ -177,7 +177,7 @@ public class Gmail {
         ArrayList<Mail> sendList = user.getSendMail();
         for(Mail ele:sendList){
             ele.getMailInfo();
-            System.out.println(------------------------);
+            System.out.println("------------------");
         }
     }
 
