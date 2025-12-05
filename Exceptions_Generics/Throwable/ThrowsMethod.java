@@ -4,6 +4,8 @@ public class ThrowsMethod {
 
     static void main() {
 
+
+
 //        try{
 //            int[]arr = {10,20,30,40};
 //            arr[4] = 100000;
