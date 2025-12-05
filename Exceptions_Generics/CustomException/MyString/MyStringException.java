@@ -1,7 +1,7 @@
 package Exceptions_Generics.CustomException.MyString;
 
-class MyStringIndexOtOfBoundsException extends IndexOutOfBoundsException{
-    MyStringIndexOtOfBoundsException(String message){
+class MyStringIndexOutOfBoundsException extends IndexOutOfBoundsException{
+    MyStringIndexOutOfBoundsException(String message){
         super(message);
     }
 }
@@ -31,7 +31,7 @@ class MyString{
             throw new MyNullPointerException("ref is null");
         }
         if(index<0 || index>=arr.length)
-            throw new MyStringIndexOtOfBoundsException("INDEX OUT OF BOUND ");
+            throw new MyStringIndexOutOfBoundsException("INDEX OUT OF BOUND ");
         return arr[index];
     }
 }
