@@ -195,6 +195,72 @@ public class GmailApp {
     private void draftModule(User user){
         System.out.println("DRAFT MAIL MODULE ");
         ArrayList<Mail> draftList = user.getDraftMail();
-        
+
+        if(draftList.size()==0){
+            System.out.println("NO DRAFT FOUND ");
+            return;
+        }
+
+        int srno = 1;
+        for(Mail ele:draftList){
+            System.out.println("SRNO DRAFTS " + srno);
+            ele.getMailInfo();
+            System.out.println("-----------------------------");
+        }
+        System.out.println("Do you want to SEND/EDIT  A Draft Mail (YES/NO)");
+        String resp = new Scanner(System.in).next();
+        if(resp.equalsIgnoreCase("YES")){
+            System.out.println("Enter srno");
+            int num = new Scanner(System.in).nextInt();
+            Mail editSend = draftList.get(num-1);
+            System.out.println("Do you want to 1.edit 2.Send");
+            int opt = new Scanner(System.in).nextInt();
+
+            if(opt==1){
+                editDraft(editSend);
+            }else if(opt==2){
+                user.sendMail(editSend);
+                String toUserMail = editSend.getReceiverMail();
+                User toUserObject = null;
+
+                for(User ele : userList){
+                    if(ele.getMail().equals(toUserMail)){
+                        toUserObject = ele;
+                    }
+                }
+                toUserObject.inboxMail(editSend);
+                draftList.remove(num-1);
+                System.out.println("MAIL HAS BEEN SEND SUCESSFULYL FROM DRAFT");
+
+            }
+        }
+    }
+
+    private void editDraft(Mail editSend){
+        System.out.println("EDIT DRAFT MODULE");
+        editSend.getMailInfo();
+        System.out.println("What do you want to edit :");
+        System.out.println(" 1. TO 2.SUBJECT 3.BODY");
+        System.out.println("Enter the option ");
+        int opt = new Scanner(System.in).nextInt();
+        User toUser = null;
+
+        for(User ele:userList){
+            if(editSend.getReceiverMail().equals(ele.getMail())){
+                toUser = ele;
+                break;
+            }
+        }
+
+        switch (opt)
+        {
+            case 1 ->{
+                outerLoop :
+                        for(;;){
+                            System.out.println("To : ");
+
+                        }
+            }
+        }
     }
 }
