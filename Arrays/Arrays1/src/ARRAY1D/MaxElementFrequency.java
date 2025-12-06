@@ -1,4 +1,4 @@
-package ARRAY1D;
+package Arrays1.src.ARRAY1D;
 
 public class MaxElementFrequency {
 
