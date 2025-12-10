@@ -3,7 +3,7 @@ package PractArray31;
 public class SecondLarget {
 
    public static void main(String[] args) {
-       int []arr = {21,12,14,16,17,20};
+       int []arr = {12,12,41};
 
  int result = secondLargest21(arr);
        System.out.println(result);
@@ -21,11 +21,11 @@ public class SecondLarget {
            if(arr[i]>largest){
                SecondLargst = largest;
                largest = arr[i];
-           }else if (arr[i]>SecondLargst){
+           }else if (arr[i]>SecondLargst && arr[i] <largest){
                SecondLargst = arr[i];
            }
        }
 
-        return SecondLargst;
+        return SecondLargst == Integer.MIN_VALUE ? -1 : SecondLargst;
     }
 }
