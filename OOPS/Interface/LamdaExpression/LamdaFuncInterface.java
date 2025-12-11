@@ -1,7 +1,7 @@
 package Interface.LamdaExpression;
 
 @FunctionalInterface
-public interface LamdaFuncInterface {
+public interface LamdaFuncInterface  {
 
   void show();
 

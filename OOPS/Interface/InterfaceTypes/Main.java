@@ -1,6 +1,6 @@
 package Interface.InterfaceTypes;
 
-public class Main implements FunctionalInterface1 {
+public class Main implements FunctionalInterface1,Cloneable {
 //
 
 public void demo1(){

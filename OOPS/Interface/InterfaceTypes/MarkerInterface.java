@@ -1,4 +1,4 @@
 package Interface.InterfaceTypes;
 
-public interface MarkerInterface {
+public interface MarkerInterface{
 }
