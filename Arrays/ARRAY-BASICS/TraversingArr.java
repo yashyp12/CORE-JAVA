@@ -81,26 +81,24 @@ class TraversingArr {
         // int i = 0;
         // while (i < a.length) {
 
-        //     int j = 0;
-        //     while (j < a[i].length) {
+        // int j = 0;
+        // while (j < a[i].length) {
+        // System.out.println(a[i][j]);
+        // j++;
+        // }
+        // System.out.println();
+        // i++;
+        // }
+
+        // reverse traversing 2 d arrat
+        // for (int i = a.length - 1; i >= 0; i--) {
+        //     for (int j = a[i].length - 1; j >= 0; j--) {
         //         System.out.println(a[i][j]);
-        //         j++;
         //     }
         //     System.out.println();
-        //     i++;
         // }
-
-        // reverse traversing
-        // for (int i = a.length - 1; i >= 0; i--) {
-        // for (int j = a[i].length - 1; j >= 0; j--) {
-        // System.out.println(a[i][j]);
-        // }
-        // }
-
-
 
         
-
 
     }
 }
