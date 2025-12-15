@@ -56,7 +56,7 @@ class TraversingArr {
         // } while (i >= 0);
 
         // 2d arr
-        int[][] a = { { 10, 20, 30, 40 }, { 50, 60, 70, 80, 90, 100 } };
+        // int[][] a = { { 10, 20, 30, 40 }, { 50, 60, 70, 80, 90, 100 } };
         // for(int i=0;i<a.length;i++){
         // for(int j=0;j<a[i].length;j++){
         // System.out.println(a[i][j]);
@@ -92,13 +92,25 @@ class TraversingArr {
 
         // reverse traversing 2 d arrat
         // for (int i = a.length - 1; i >= 0; i--) {
-        //     for (int j = a[i].length - 1; j >= 0; j--) {
-        //         System.out.println(a[i][j]);
-        //     }
-        //     System.out.println();
+        // for (int j = a[i].length - 1; j >= 0; j--) {
+        // System.out.println(a[i][j]);
+        // }
+        // System.out.println();
         // }
 
-        
+        int[][] a = { { 10, 20, 30, 40 }, { 50, 60, 70, 80, 90, 100 } };
+
+        int i = a.length - 1;
+        while (i >= 0) {
+
+            int j = a[i].length - 1;
+            while (j >= 0) {
+                System.out.println(a[i][j]);
+                j--;
+            }
+            System.out.println();
+            i--;
+        }
 
     }
 }
