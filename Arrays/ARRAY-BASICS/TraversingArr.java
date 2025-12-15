@@ -101,17 +101,29 @@ class TraversingArr {
         int[][] a = { { 10, 20, 30, 40 }, { 50, 60, 70, 80, 90, 100 } };
 
         // using while loop
-        int i = a.length - 1;
-        while (i >= 0) {
+        // int i = a.length - 1;
+        // while (i >= 0) {
 
+        // int j = a[i].length - 1;
+        // while (j >= 0) {
+        // System.out.println(a[i][j]);
+        // j--;
+        // }
+        // System.out.println();
+        // i--;
+        // }
+
+        // using do while
+        int i = a.length - 1;
+        do {
             int j = a[i].length - 1;
-            while (j >= 0) {
+            do {
                 System.out.println(a[i][j]);
                 j--;
-            }
-            System.out.println();
+            } while (j >= 0);
             i--;
-        }
+            System.out.println();
+        } while (i >= 0);
 
     }
 }
