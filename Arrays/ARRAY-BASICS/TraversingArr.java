@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class TraversingArr {
 
     public static void main(String[] args) {
@@ -114,16 +116,20 @@ class TraversingArr {
         // }
 
         // using do while
-        int i = a.length - 1;
-        do {
-            int j = a[i].length - 1;
-            do {
-                System.out.println(a[i][j]);
-                j--;
-            } while (j >= 0);
-            i--;
-            System.out.println();
-        } while (i >= 0);
+        // int i = a.length - 1;
+        // do {
+        // int j = a[i].length - 1;
+        // do {
+        // System.out.println(a[i][j]);
+        // j--;
+        // } while (j >= 0);
+        // i--;
+        // System.out.println();
+        // } while (i >= 0);
 
+        String[] strarr = { "yash", "patil" };
+        System.out.println(Arrays.toString(strarr));
+
+        
     }
 }
