@@ -46,16 +46,47 @@ public class ArrayDeclaration {
         // }
 
         // initialising an char array
-        char[] charr = new char[4];
+        char[] charr = new char[26];
         // System.out.println(Arrays.toString(charr));
 
         // System.out.println(charr[2] == '\0');
         // System.out.println(Arrays.toString(charr));
 
-        for(int i =0;i<charr.length;i++)
-        {
-            
-        }
+        // int ch = 65;
+        // for (int i = 0; i < charr.length; i++) {
+        //     System.out.println("adding element " + ch);
+        //     charr[i] = (char) ch;
+        //     ch++;
+        // }
+
+        // for (int i = 0; i < charr.length; i++) {
+        //     System.out.print(charr[i] + " ");
+        // }
+
+
+
+// initialsing an char array using random function
+// random *100 gives us 0 to 100
+
+int randomNum =(int) (Math.random()); // generate 65 to 90
+
+System.out.println(randomNum);
+
+// char chr8 []  = new char[26];
+// for(int i = 0;i<chr8.length;i++)
+//     {
+//         if(randomNum>=65 && randomNum<=90)
+//             chr8[i] = (char)randomNum; randomNum++;
+//     } 
+
+//     System.out.println(Arrays.toString(chr8));
+
+
+ 
+
+
+
+
 
     }
 }
