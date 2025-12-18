@@ -1,5 +1,3 @@
-package ArrayBasics;
-
 import java.util.Arrays;
 
 public class jaggedarr {

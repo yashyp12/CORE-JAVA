@@ -1,4 +1,4 @@
-package ArrayBasics;
+import java.util.Arrays;
 
 public class ArrayDeclaration {
 
@@ -54,76 +54,81 @@ public class ArrayDeclaration {
 
         // int ch = 65;
         // for (int i = 0; i < charr.length; i++) {
-        //     System.out.println("adding element " + ch);
-        //     charr[i] = (char) ch;
-        //     ch++;
+        // System.out.println("adding element " + ch);
+        // charr[i] = (char) ch;
+        // ch++;
         // }
 
         // for (int i = 0; i < charr.length; i++) {
-        //     System.out.print(charr[i] + " ");
+        // System.out.print(charr[i] + " ");
         // }
 
+        // initialsing an char array using random function
+        // random *100 gives us 0 to 100
+
+        // int randomNum = 65 + (int)(Math.random()*26); // generate from 65 to 90
+
+        // char[] chr9 = new char[26];
+        // for(int i =0;i<chr9.length;i++)
+        // {
+        // if(randomNum<=90){
+        // chr9[i] = (char) randomNum;
+        // randomNum++;
+        // }else{
+        // randomNum = 65;
+        // chr9[i] = (char) randomNum;
+        // randomNum++;
+        // }
+        // }
+
+        // System.out.println(Arrays.toString(chr9));
+
+        // without duplicates
+        // boolean [] dup = new boolean[26];
+        //
+        // char[] chr9 = new char[26];
+        // for(int i =0;i<chr9.length;i++)
+        // {
+        // int randomNum;
+        //
+        // do {
+        // randomNum = 65 + (int)(Math.random()*26);
+        // } while (dup[randomNum-65]);
+        //
+        // chr9[i] = (char)randomNum;
+        // dup[randomNum-65] = true;
+        //
+        //
+        // }
+        //
+        // System.out.println(Arrays.toString(chr9));
+
+        // char chr8 [] = new char[26];
+        // for(int i = 0;i<chr8.length;i++)
+        // {
+        // if(randomNum>=65 && randomNum<=90)
+        // chr8[i] = (char)randomNum; randomNum++;
+        // }
+
+        // System.out.println(Arrays.toString(chr8));
+
+        // int[] a = { 3, 6 , 9  };
+
+        // for (int i = 0; i < a.length; i++) {
+        //     a[i] = a[i] + i;
+        // }
+
+        // System.out.println(Arrays.toString(a));
 
 
-// initialsing an char array using random function
-// random *100 gives us 0 to 100
+        // 
+        int [] c  = {2,4,6,8};
 
-// int randomNum = 65 + (int)(Math.random()*26);     // generate from 65 to 90                                                                               
- 
-// char[] chr9 = new char[26];
-// for(int i =0;i<chr9.length;i++)
-// {
-//     if(randomNum<=90){
-//         chr9[i] = (char) randomNum;
-//         randomNum++;
-//     }else{
-//         randomNum = 65;
-//         chr9[i] = (char) randomNum;
-//         randomNum++;   
-//     }
-// }
+        for(int i =1;i<c.length;i++)
+        {
+            c[i] = c[i] - c[i-1];
+        }
 
-// System.out.println(Arrays.toString(chr9));
-
-
-
-//without duplicates
-// boolean [] dup = new boolean[26];
-//
-//char[] chr9 = new char[26];
-//for(int i =0;i<chr9.length;i++)
-//    {
-//    int randomNum;
-//
-//    do {
-//        randomNum = 65 + (int)(Math.random()*26);
-//    } while (dup[randomNum-65]);
-//
-//    chr9[i] = (char)randomNum;
-//    dup[randomNum-65] = true;
-//
-//
-//}
-//
-//System.out.println(Arrays.toString(chr9));
-
-
-
-
-
-
-// char chr8 []  = new char[26];
-// for(int i = 0;i<chr8.length;i++)
-//     {
-//         if(randomNum>=65 && randomNum<=90)
-//             chr8[i] = (char)randomNum; randomNum++;
-//     } 
-
-//     System.out.println(Arrays.toString(chr8));
-
-
-  
-
-
+        System.out.println(Arrays.toString(c));
     }
 }
