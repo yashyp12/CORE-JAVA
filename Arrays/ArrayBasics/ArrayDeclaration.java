@@ -72,7 +72,7 @@ public class ArrayDeclaration {
 
 int randomNum = 65 + (int)(Math.random()*26);     // generate from 65 to 90                                                                               
  
-char chr9[] = new char[26];
+char[] chr9 = new char[26];
 for(int i =0;i<chr9.length;i++)
 {
     if(randomNum<=90){
