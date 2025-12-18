@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class teest {
  
     
@@ -16,10 +18,12 @@ public class teest {
 
 
 
-String str = "Hello";
-System.out.println(str.substring(2, 4));
+// String str = "Hello";
+// System.out.println(str.substring(2, 4));
 
+ boolean [] dup = new boolean[26]; 
 
+ System.out.println(Arrays.toString(dup));
 
     }
 }
