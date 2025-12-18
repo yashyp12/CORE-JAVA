@@ -1,7 +1,5 @@
 package ArrayBasics;
 
-import java.util.Arrays;
-
 public class ArrayDeclaration {
 
     public static void main(String[] args) {
@@ -22,16 +20,42 @@ public class ArrayDeclaration {
 
         // System.out.println(Arrays.deepToString(jaggedArr));
 
-        byte[][] a = new byte[2][3];
-        a[0][0] = 1;
-        a[0][1] = 2;
-        a[0][2] = 3;
+        // byte[][] a = new byte[2][3];
+        // a[0][0] = 1;
+        // a[0][1] = 2;
+        // a[0][2] = 3;
 
-        a[1][0] = 4;
-        a[1][1] = 5;
-        a[1][2] = 6;
+        // a[1][0] = 4;
+        // a[1][1] = 5;
+        // a[1][2] = 6;
 
-        System.out.println(Arrays.deepToString(a));
+        // System.out.println(Arrays.deepToString(a));
+
+        // int[] arr4 = new int[4];
+        // Scanner sc = new Scanner(System.in);
+
+        // for (int i = 0; i < arr4.length; i++) {
+        // arr4[i] = sc.nextInt();
+        // }
+
+        // initialsing an array usign random function
+        // int[] arr5 = new int[(int)(Math.random()*10)];
+
+        // for (int i = 0; i < arr5.length; i++) {
+        // arr5[i] = (int)(Math.random()*10);
+        // }
+
+        // initialising an char array
+        char[] charr = new char[4];
+        // System.out.println(Arrays.toString(charr));
+
+        // System.out.println(charr[2] == '\0');
+        // System.out.println(Arrays.toString(charr));
+
+        for(int i =0;i<charr.length;i++)
+        {
+            
+        }
 
     }
 }
