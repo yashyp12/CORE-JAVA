@@ -26,8 +26,16 @@ public class frequencyArr {
                 }
             }
             count[i] = cnt;
-
         }
+
+        // printing
+        for (int i = 0; i < count.length; i++) {
+            if (count[i] != -1) {
+                System.out.println(arr[i] + " frequency - " + count[i] + " ");
+            }
+          
+        }
+
         return count;
     }
 }
