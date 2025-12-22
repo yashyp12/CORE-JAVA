@@ -1,23 +1,21 @@
 import java.util.Arrays;
 
-class prefixSum {
-
+public class diffArrEl {
     public static void main(String[] args) {
 
-        int[] arr = { 1, 3, 5, 7 };
-
-        prefixSum1(arr);
-
+        int[] arr = { 5, 9, 14, 20 };
+        diffArrEl1(arr);
         System.out.println(Arrays.toString(arr));
+
     }
 
-    static void prefixSum1(int[] arr) {
+    static void diffArrEl1(int[] arr) {
         if (arr == null || arr.length == 0)
             return;
 
         for (int i = 1; i < arr.length; i++) {
-            arr[i] = arr[i] + arr[i - 1];
+            arr[i] = arr[i] - arr[i - 1];
         }
-    }
 
+    }
 }
