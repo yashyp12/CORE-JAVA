@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class diffArrEl {
     public static void main(String[] args) {
 
-        int[] arr = { 5, 9, 14, 20 };
+        int[] arr = {3,8,15,23 };
         diffArrEl1(arr);
         System.out.println(Arrays.toString(arr));
 

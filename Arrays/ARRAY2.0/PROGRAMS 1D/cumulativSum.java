@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class prefixSum {
+class cumulativSum {
 
     public static void main(String[] args) {
 
