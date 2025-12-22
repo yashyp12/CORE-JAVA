@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class duplicateElement {
 
     public static void main(String[] args) {
@@ -13,12 +15,17 @@ public class duplicateElement {
         // }
 
         // removeDuplicate
-        int[] distinct = removeDuplicate(arr, count);
-        System.out.println("distinct elements ");
+        // int[] distinct = removeDuplicate(arr, count);
+        // System.out.println("distinct elements ");
 
-        for (int i : distinct) {
-            System.out.print(i + " ");
-        }
+        // for (int i : distinct) {
+        //     System.out.print(i + " ");
+        // }
+
+
+        uniDupSepArr(arr, count);
+
+
 
     }
 
@@ -67,4 +74,47 @@ public class duplicateElement {
 
         return distinct;
     }
+
+
+    // all in onee
+    public static void uniDupSepArr(int[] arr, int[] count) {
+
+        // uncut - unique count , dupcnt - dup count , repeat - mor than 0 freq
+        int uncnt = 0, dupcnt = 0, repeat = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (count[i] == -1) {
+                dupcnt++;
+            } else if (count[i] == 1) {
+                uncnt++;
+            } else if (count[i] > 1) {
+                repeat++;
+            }
+        }
+
+        int[] uncntar = new int[uncnt];
+        int[] dupcntar = new int[dupcnt];
+        int[] repeatcnt = new int[repeat];
+
+        // adding elements to the arrays
+        for (int i = 0, j = 0, k = 0, l = 0; i < arr.length; i++) {
+
+            if (count[i] == 1) {
+                uncntar[j] = arr[i];
+                j++;
+            } else if (count[i] > 1) {
+                repeatcnt[k] = arr[i];
+                k++;
+            } else if (count[i] == -1) {
+                dupcntar[l] = arr[i];
+                l++;
+            }
+        }
+
+        System.out.println("UNIQUE  : " + Arrays.toString(uncntar));
+        System.out.println("REPEATED: " + Arrays.toString(repeatcnt));
+        System.out.println("DUPLICATE : " + Arrays.toString(dupcntar));
+
+    }
+
 }
