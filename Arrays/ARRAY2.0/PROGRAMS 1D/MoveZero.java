@@ -7,7 +7,7 @@ public class MoveZero {
         // k - position of the non zero elements
         // if found non zero increment it
 
-        int[] arr = { 1, 0, 3, 0, 5, 0, 7 };
+        int[] arr = {0, 4, 0, 1, 0, 3};
 
         int k = 0;
 
@@ -28,5 +28,18 @@ public class MoveZero {
 
         // final arry
         System.out.println("after updation " + Arrays.toString(arr));
+    }
+
+    public static void moveZerosToEnd(int[]arr){
+        int k =0 ;
+
+        for(int i =0;i<arr.length;i++){
+            if(arr[i]!=0){
+                int temp = arr[k];
+                arr[k] = arr[i];
+                arr[i] = temp;
+                k++;
+            }
+        }
     }
 }
