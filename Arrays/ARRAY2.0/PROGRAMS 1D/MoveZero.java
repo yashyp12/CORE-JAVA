@@ -18,9 +18,7 @@ public class MoveZero {
             if (arr[i] != 0) {
                 arr[k] = arr[i];
                 k++;
-            } else {
-                continue;
-            }
+            } 
         }
 
         // now k has position of non zero
