@@ -45,4 +45,9 @@ public class ArrayRotation
         }
         arr[0] = temp;
     }
+
+//    array k times rotation
+    private static void KTimesRotate(int [] arr , int k){
+
+    }
 }
