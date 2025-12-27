@@ -34,8 +34,8 @@ public class K_RotationArr {
         //step 1 -> reverse the last k elements
         //step 2 -> reverse the remaining first n-k elements means , (n-k-1) elements from the array
         //step 3 -> reverse the whole arr elemetn from the array
-        reverse(arr, k - 1, n - 1);
-        reverse(arr, 0, n - k - 1);    // n-k-1 - 5 - 3- 1 = 1 -> 0,1
+        reverse(arr, n-k,n-1);
+        reverse(arr, 0, n-k-1);    // n-k-1 - 5 - 3- 1 = 1 -> 0,1
         reverse(arr, 0, n - 1);
     }
 
