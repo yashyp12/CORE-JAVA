@@ -1,3 +1,5 @@
+package PractArray31;
+
 import java.util.Arrays;
 
 public class MoveZero {

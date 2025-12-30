@@ -25,6 +25,20 @@ public class DeclarationArr {
 
 
 //    backward traversing of array 1d
+//    for(int i = arr.length-1;i>=0;i--){
+//        System.out.println(arr[i]);
+//    }
+
+//    int i =arr.length-1;
+//    while(i>=0){
+//        System.out.println(arr[i]);
+//        i--;
+//    }
+
+//        2d array forward traversing
+        int [][]arr1 = {{10,20},{30,40}};
+//        System.out.println(Arrays.deepToString(arr1));
+        System.out.println(arr1[0][1]);
 
 
      }
