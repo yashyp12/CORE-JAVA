@@ -7,13 +7,15 @@ public class BasicArr {
 
     static void main(String[] args) {
 
-        int[] arr = {1, 2, 3, 4, 5};
+//        int[] arr = {1, 2, 3, 4, 5};
 //        System.out.println(sumOfArray(arr));
 //        System.out.println(avgOfArray(arr));
 //        sumOfEvenOdd(arr);
 //        productOfArr(arr);
 //        randFuncInit(arr);
-        charArrExam();
+//        charArrExam();
+
+
     }
 
 
@@ -66,7 +68,10 @@ public class BasicArr {
         System.out.println("after " + Arrays.toString(arr));
     }
 
-
+//mergin 2 dif arryas
+    static void mergeArr(int []arr1,int []arr2){
+        // approach -
+    }
 
 
 }
