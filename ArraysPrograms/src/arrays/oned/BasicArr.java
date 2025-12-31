@@ -26,4 +26,13 @@ public class BasicArr {
         }
         return sum / arr.length;
     }
+
+    static int sumOfEven(int[] arr) {
+        int Evensum = 0;
+
+        for(int i:arr){
+            if(i%2==0) Evensum+=i;
+        }
+        return Evensum;
+    }
 }
