@@ -27,20 +27,35 @@ public class Declaration {
 
 
 //        2d array
-        int[][] arr = {
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8}
-        };
+//        int[][] arr = {
+//                {1, 2, 3},
+//                {4, 5, 6},
+//                {7, 8}
+//        };
 //        reversing 2d array
 
-        for (int i = arr.length - 1; i >= 0; i--) {
-            for (int j = arr[i].length - 1; j >= 0; j--) {
-                System.out.println(arr[i][j]);
-            }
-            System.out.println();
-        }
+//        for (int i = arr.length - 1; i >= 0; i--) {
+//            for (int j = arr[i].length - 1; j >= 0; j--) {
+//                System.out.println(arr[i][j]);
+//            }
+//            System.out.println();
+//        }
 
-
+//        intialsie an character array in the sequential order
+        char[]charr = new char[26];
+        initCharArr(charr);
     }
+
+    static void initCharArr(char []charr){
+        char ch = 65;
+//        printing a to z in sequential order
+        for(int i =0;i<charr.length;i++){
+            charr[i] = (char)ch;
+            ch++;
+        }
+        System.out.println(Arrays.toString(charr));
+    }
+
+
+
 }
