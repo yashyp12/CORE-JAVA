@@ -12,8 +12,8 @@ public class RandInitArr {
 //        randomInit(arr1);
 
         char[]ch = new char[26];
-        charInitRandom(ch);
-//        DistinctRand();
+//        charInitRandom(ch);
+        DistinctRand();
     }
 
     static void randomInit(int[] arr) {
@@ -42,18 +42,30 @@ public class RandInitArr {
 
 
 //    printing random numbers from 20 to 60 without duplicates
-//    static void DistinctRand(){
-//        int randomNumber = 20 +(int)(Math.random()*10);
-//        for(int i =20;i<=60;i++){
-//            if(randomNumber>60)
-//            {
-//                randomNumber = 20;
-//                System.out.println(randomNumber);
-//                randomNumber++;
-//            }
+    static void DistinctRand(){
+
+        int []arr = new int[40];
+
+        for(int i =1, cnt=0;;i++){
+            int num = (int)(Math.random()*100);
+            if(num>=20 && num<=60){
+                if(checkNumber(arr,num)){
+                    arr[cnt++] = num;
+                }
+            }
+            if(cnt==40) break;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+
+    private static boolean checkNumber(int[] arr, int num) {
+        for(int ele:arr){
+            if(ele==num) return false;
+
+        }
+        return true;
+    }
+
 //
-//            System.out.println(randomNumber);
-//        }
-//    }
 
 }
