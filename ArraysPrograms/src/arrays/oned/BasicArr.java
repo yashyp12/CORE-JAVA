@@ -16,7 +16,7 @@ public class BasicArr {
 //        charArrExam();
 
         int[] arr1 = {1, 2, 3, 4}, arr2 = {5, 6, 7};
-        mergeArr(arr1, arr2);
+        mergeUnsortedArr(arr1, arr2);
 
 
     }
@@ -71,15 +71,13 @@ public class BasicArr {
     }
 
     //mergin 2 dif arryas - only unsorted approach
-    static int[] mergeArr(int[] arr1, int[] arr2) {
-        /* approach - assume we have an 2 sorted array
+    static int[] mergeUnsortedArr(int[] arr1, int[] arr2) {
+        /* approach - assume we have an 2 unsorted array
          - in which create an another one array of arr1+arr2 size
         - store the max - length of an array
         - iterate the aray till the max array length
         */
-
         int[] c = new int[arr1.length + arr2.length];
-
         int max = arr1.length < arr2.length ? arr2.length : arr1.length;
 
         for (int i = 0, ci = 0; i < max; i++) {
@@ -89,6 +87,10 @@ public class BasicArr {
 
         System.out.println("update c[] " + Arrays.toString(c));
         return c;
+    }
+
+    static void mergeSortedArrr(int[]arr1,int[]arr2){
+
     }
 
 
