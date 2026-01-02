@@ -11,6 +11,7 @@ public class EvenOddArr {
                 {4, 5, 6}};
 
         evenOdd(arr);
+
     }
 
 
@@ -42,5 +43,37 @@ public class EvenOddArr {
         }
         System.out.println(Arrays.toString(earr));
         System.out.println(Arrays.toString(oarr));
+    }
+
+
+    static void evenOddSeperation(int[]arr){
+
+        int cnt = arr.length;
+
+        for(int i=0; i<cnt;i++)
+        {
+            if(arr[i]%2==0){
+                cnt --;
+
+                int j = i++;
+
+                while(j<arr.length && arr[j]%2==0)
+                {
+                    j++;
+                }
+
+                if(j==arr.length) break;
+
+                int temp = arr[j];
+
+                for(int k =j; k >i; k--){
+                    arr[k] = arr[k-1];
+                }
+
+                arr[i] = temp;
+            }
+        }
+
+        System.out.println(Arrays.toString(arr));
     }
 }
