@@ -21,7 +21,7 @@ public class FrequencyEl {
                 }
             }
             freq[i] = cnt;
-            System.out.println("Freq of element is " + arr[i] + " : " +freq[i] );
+            System.out.println("Freq of element is " + arr[i] + " : " +cnt);
 
         }
 
