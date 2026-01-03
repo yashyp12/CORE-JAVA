@@ -9,7 +9,7 @@ public class FrequencyEl {
 //        frequencyEle(arr);
 //        SecondHighestFreq(arr);
 //        uniqueEle(arr);
-    thirdLargest(arr);
+        thirdLargest(arr);
     }
 
 
@@ -64,7 +64,7 @@ public class FrequencyEl {
 
 
 //      seconds smallest least repeating element in ar
- int SMALLEST = Integer.MAX_VALUE;
+        int SMALLEST = Integer.MAX_VALUE;
         int SecondSmallest = Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {
             if (freq[i] == -1) continue;
@@ -72,7 +72,7 @@ public class FrequencyEl {
                 if (arr[i] < SMALLEST) {
                     SecondSmallest = SMALLEST;
                     SMALLEST = arr[i];
-                } else if (arr[i] >SMALLEST && arr[i] < SecondSmallest) {
+                } else if (arr[i] > SMALLEST && arr[i] < SecondSmallest) {
                     SecondSmallest = arr[i];
                 }
             }
@@ -84,16 +84,15 @@ public class FrequencyEl {
     }
 
 
-    static void uniqueEle(int []arr){
+    static void uniqueEle(int[] arr) {
 
-        int[]freq = new int[arr.length];
+        int[] freq = new int[arr.length];
 
-        for(int i =0; i<arr.length;i++)
-        {
-            if(freq[i] ==-1) continue;
+        for (int i = 0; i < arr.length; i++) {
+            if (freq[i] == -1) continue;
             int cnt = 1;
-            for(int j = i+1;j<arr.length;j++){
-                if(arr[i] == arr[j]){
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
                     freq[j] = -1;
                     cnt++;
                 }
@@ -105,15 +104,15 @@ public class FrequencyEl {
 
 //        create the new array with the exact size
         int uniqueCount = 0;
-        for(int i =0;i<freq.length;i++){
-            if(freq[i]==1) uniqueCount++;
+        for (int i = 0; i < freq.length; i++) {
+            if (freq[i] == 1) uniqueCount++;
         }
 
         // create aray of exact size
-        int[]uniqueAr = new int[uniqueCount];
-        int k =0;
-        for(int i =0;i<arr.length;i++){
-            if(freq[i]==1){
+        int[] uniqueAr = new int[uniqueCount];
+        int k = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (freq[i] == 1) {
                 uniqueAr[k++] = arr[i];
             }
         }
@@ -123,19 +122,18 @@ public class FrequencyEl {
     }
 
 
-//    third largest repeateting element from the array
-    static void thirdLargest(int[]arr){
-        int []freq = new int[arr.length];
+    //    third largest repeateting element from the array
+    static void thirdLargest(int[] arr) {
+        int[] freq = new int[arr.length];
 
 //        step 1 - calculate the frequency of the arr element
         //step 2 - then iterate over the freuency arr and pick up the element which are repeating ,
         // step 3 - check the largest , second largest, third largest repeatinig element
-        for(int i =0;i<arr.length;i++)
-        {
-            if(freq[i]==-1) continue;
+        for (int i = 0; i < arr.length; i++) {
+            if (freq[i] == -1) continue;
             int cnt = 1;
-            for(int j = i+1; j<arr.length;j++){
-                if(arr[i]==arr[j]){
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
                     cnt++;
                     freq[j] = -1;
                 }
@@ -149,19 +147,18 @@ public class FrequencyEl {
         int max3 = Integer.MIN_VALUE;
 
 
-        for(int i =0;i<arr.length;i++)
-        {
-            if(freq[i]==-1) continue;
-            if(freq[i]<2) continue;
+        for (int i = 0; i < arr.length; i++) {
+            if (freq[i] == -1) continue;
+            if (freq[i] < 2) continue;
 
-            if(arr[i]>max){
+            if (arr[i] > max) {
                 max3 = max2;
                 max2 = max;
                 max = arr[i];
-            }else if(arr[i]<max && arr[i]>max2){
+            } else if (arr[i] < max && arr[i] > max2) {
                 max3 = max2;
                 max2 = max;
-            }else if(arr[i]<max2 && arr[i]>max3){
+            } else if (arr[i] < max2 && arr[i] > max3) {
                 max3 = arr[i];
             }
         }
