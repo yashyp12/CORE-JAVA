@@ -10,13 +10,13 @@ class QuickSort{
 		System.out.println("After : " + Arrays.toString(arr));
 	}
 
-	static void quickSort(int[]arr, int start, int end){
-		if(end<start) return;
+	static void quickSort(int[]arr, int start, int end) {
+        if (end < start) return;
 
-		int pivotIndex = partition(arr,start, end);
-		quickSort(arr,start,pivotIndex-1);
-		quickSort(arr,pivotIndex+1,end);
-		       
+        int pivotIndex = partition(arr, start, end);
+        quickSort(arr, start, pivotIndex - 1);
+        quickSort(arr, pivotIndex + 1, end);
+    }
 
 	static int partition(int []arr, int start,int end){
 		int pivot = arr[end];

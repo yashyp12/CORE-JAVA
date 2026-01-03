@@ -5,7 +5,7 @@ class MergeSortExample{
 	//dividing and coquer approach
 	public static void main(String[] args) {
 		
-		int [] arr = {5,6,4,7,3,8,2,9,1,0};
+		int [] arr = {5,4,3,2,1,0};
 
 		System.out.println("Before :" + Arrays.toString(arr));
 		mergeSort(arr,0,arr.length-1);
