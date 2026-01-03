@@ -148,21 +148,23 @@ public class FrequencyEl {
         int max2 = Integer.MIN_VALUE;
         int max3 = Integer.MIN_VALUE;
 
-        for(int i =0; i<arr.length;i++){
+
+        for(int i =0;i<arr.length;i++)
+        {
             if(freq[i]==-1) continue;
-            for(int j =0;j<freq.length;j++)
-            {
-                if(arr[j]>max){
-                    max3 = max2;
-                    max2 = max;
-                    max = arr[j];
-                }else if (arr[j]<max && arr[j]>max2){
-                    max3 = max2;
-                    max2 = arr[j];
-                }
+            if(freq[i]<2) continue;
+
+            if(arr[i]>max){
+                max3 = max2;
+                max2 = max;
+                max = arr[i];
+            }else if(arr[i]<max && arr[i]>max2){
+                max3 = max2;
+                max2 = max;
+            }else if(arr[i]<max2 && arr[i]>max3){
+                max3 = arr[i];
             }
         }
-
         System.out.println("max repeateting element is " + max + " second max is " + max2 + " third max is " + max3);
     }
 
