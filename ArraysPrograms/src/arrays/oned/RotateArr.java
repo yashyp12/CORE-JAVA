@@ -15,7 +15,6 @@ public class RotateArr {
 //        k % n removes unnecessary full rotations because rotating n times gives the same array.
         /*Rotating an array n times brings it back to the same array.
 So anything more than n rotations is useless repetition. */
-
         rotation = rotation%arr.length;
         for (int i = 1; i <=rotation; i++) {
             int temp = arr[0];
