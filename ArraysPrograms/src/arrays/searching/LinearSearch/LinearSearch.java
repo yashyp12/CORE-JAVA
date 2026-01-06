@@ -84,7 +84,7 @@ public class LinearSearch {
         }
 
 //        now we have an index so validate it
-        if(i<0 || i>arr.length-1) return arr;
+        if(i==arr.length) return arr;
 
 //        now create an another array with less than 1 size
         int[]ans = new int[arr.length-1];
