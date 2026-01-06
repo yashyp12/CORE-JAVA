@@ -29,7 +29,6 @@ public class LinearSearch {
     }
 
     static int[] removeIndex(int[] arr, int index) {
-
         if (index >= 0 && index < arr.length) {
             int[] ans = new int[arr.length - 1];
 
@@ -49,30 +48,58 @@ public class LinearSearch {
 
     }
 
-    static int[] removeElement(int[] arr, int ele) {
+//    static int[] removeElement(int[] arr, int ele) {
+//
+//        // remove the element from the index for that we need to find first the index of that element
+//        int i = 0;
+//        for (i = 0; i < arr.length; i++) {
+//            if (arr[i] == ele) {
+//                break;
+//            }
+//        }
+////            check whether the index is valid or not
+//            if (i<0 || i > arr.length) return arr;
+//
+//            int[] ans = new int[arr.length-1];
+//
+////            now putting the elemetn in the new aray
+//            for (int j = 0; j < arr.length; j++) {
+//                if (j < i) {
+//                    ans[j] = arr[j];
+//                } else if (j > i) {
+//                    ans[j - 1] = arr[j];
+//                }
+//            }
+//
+//            return ans;
+//        }
+//    }
+//
+    static int[] removeElement1(int[] arr, int ele) {
 
-        // remove the element from the index for that we need to find first the index of that element
+//        first find the index of the element to remove
         int i = 0;
-        for (i = 0; i < arr.length; i++) {
-            if (arr[i] == ele) {
-                break;
+        for(i =0;i<arr.length;i++){
+            if(arr[i]==ele)break;
+        }
+
+//        now we have an index so validate it
+        if(i<0 || i>arr.length-1) return arr;
+
+//        now create an another array with less than 1 size
+        int[]ans = new int[arr.length-1];
+
+//        now iterate over the array
+
+        for(int j=0;j<arr.length;j++){
+            if(j<i){
+                ans[j] = arr[j];
+            }else if(j>i){
+                ans[j-1] = arr[j];
             }
         }
-//            check whether the index is valid or not
-            if (i<0 || i > arr.length) return arr;
 
-            int[] ans = new int[i];
-
-//            now putting the elemetn in the new aray
-            for (int j = 0; j < arr.length; j++) {
-                if (j < i) {
-                    ans[j] = arr[j];
-                } else if (j > i) {
-                    ans[j - 1] = arr[j];
-                }
-            }
-
-            return ans;
+        return ans;
         }
     }
 
