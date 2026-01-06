@@ -8,9 +8,10 @@ public class LinearSearch {
     static void main(String[] args) {
 
         int[] arr = {10, 20, 30, 40};
-        System.out.println(linearSearch(arr, 10));
+//        System.out.println(linearSearch(arr, 10));
 //        int[] ans = removeIndex(arr, 2);
-        int[] ans = removeElement(arr, 20);
+//        int[] ans = removeElement(arr, 20);
+        int[] ans = removeRange(arr,1,2);
         System.out.println(Arrays.toString(ans));
 
     }
@@ -86,7 +87,7 @@ public class LinearSearch {
 //        now we have an index so validate it
         if(i==arr.length) return arr;
 
-//        now create an another array with less than 1 size
+//        now create an array with less than 1 size
         int[]ans = new int[arr.length-1];
 
 //        now iterate over the array
@@ -101,6 +102,32 @@ public class LinearSearch {
 
         return ans;
         }
+
+
+        static int[] removeRange(int[]arr,int start,int end){
+
+        if(start<end && start>=0 && end<arr.length) {
+            int[]ans = new int[arr.length - (end-start)];
+//            [10,20,30,40]
+//            now iterate over the array
+            for(int i =0;i<arr.length;){
+                if(i<start){
+                    ans[i] = arr[i];
+                    i++;
+                }else if(i==start){
+                    i=end;
+                }else{
+                    ans[i - (end-start)] = arr[i];
+                    i++;
+                }
+            }
+            return ans;
+        }
+        return arr;
+
+        }
+
+
     }
 
 
