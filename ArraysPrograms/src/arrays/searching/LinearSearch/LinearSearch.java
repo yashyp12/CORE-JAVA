@@ -124,10 +124,7 @@ public class LinearSearch {
             return ans;
         }
         return arr;
-
         }
-
-
     }
 
 

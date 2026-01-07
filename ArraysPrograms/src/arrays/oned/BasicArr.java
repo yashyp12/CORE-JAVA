@@ -18,9 +18,7 @@ public class BasicArr {
         int[] arr1 = {1, 2, 3, 4}, arr2 = {5, 6, 7};
         mergeUnsortedArr(arr1, arr2);
 
-
     }
-
 
     static int sumOfArray(int[] arr) {
         int sum = 0;
