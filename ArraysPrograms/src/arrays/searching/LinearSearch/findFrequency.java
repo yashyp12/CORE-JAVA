@@ -48,8 +48,6 @@ public class findFrequency {
 
         System.out.println(  "the dupllicate elements are " + Arrays.toString(duplicate));
         System.out.println("the unqiue elements are " + Arrays.toString(unq));
-
-
     }
 
 
