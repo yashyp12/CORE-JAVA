@@ -10,8 +10,6 @@ public class UnionDriver {
         System.out.println("printing the union array" + Arrays.toString(unionArr(arr1,arr2)));
     }
 
-
-
 static int countCommon(int[]arr1,int[]arr2){
     int count = 0;
 
@@ -47,8 +45,6 @@ static int[] unionArr(int []arr1,int[]arr2){
     return union;
 //    now
 }
-
-
 
 static boolean contains(int num, int []arr){
     for(int ele:arr){if (ele==num) return true; }
