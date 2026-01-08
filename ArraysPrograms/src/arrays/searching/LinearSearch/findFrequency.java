@@ -14,8 +14,40 @@ public class findFrequency {
          */
 
         int [] ans = freqOfArr(arr);
-        System.out.println(Arrays.toString(ans));
+//        System.out.println(Arrays.toString(ans));
 
+        dupUnqiue(arr,ans);
+    }
+
+    static void dupUnqiue(int[]arr,int[]freq){
+
+        int dup = 0;
+        int unqiue = 0;
+
+        for (int j : freq) {
+            if (j == -1) {
+                dup++;
+            } else if(j==1) {
+                unqiue++;
+            }
+        }
+
+        int[]duplicate = new int[dup];
+        int[]unq = new int[unqiue];
+
+        int d =0 , u=0;
+
+        for(int i =0 ;i<arr.length;i++){
+            if(freq[i]==1){
+                unq[u++] = arr[i];
+            }else if(freq[i]==-1){
+                duplicate[d++] = arr[i];
+            }
+        }
+
+
+        System.out.println(  "the dupllicate elements are " + Arrays.toString(duplicate));
+        System.out.println("the unqiue elements are " + Arrays.toString(unq));
 
 
     }
