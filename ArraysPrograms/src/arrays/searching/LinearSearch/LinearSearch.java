@@ -105,7 +105,6 @@ public class LinearSearch {
 
 
         static int[] removeRange(int[]arr,int start,int end){
-
         if(start<end && start>=0 && end<arr.length) {
             int[]ans = new int[arr.length - (end-start)];
 //            [10,20,30,40]
@@ -125,6 +124,8 @@ public class LinearSearch {
         }
         return arr;
         }
+
+
     }
 
 

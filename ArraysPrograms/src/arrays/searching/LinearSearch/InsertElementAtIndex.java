@@ -1,4 +1,4 @@
-package arrays.oned;
+package arrays.searching.LinearSearch;
 
 import java.util.Arrays;
 
@@ -7,7 +7,6 @@ public class InsertElementAtIndex {
     static void main(String[] args) {
         int[] arr = {2, 3, 4, 5, 6, 7, 8, 9};
         System.out.println(Arrays.toString(insertElement(arr,8,20)));
-
     }
 
     static int[] insertElement(int[] arr, int index, int ele) {
