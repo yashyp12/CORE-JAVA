@@ -28,23 +28,23 @@ public class main {
                       then db2['sd 21 01 96','sd',-------]
          */
 
-        showDb(db,db2);
+        showDb(db, db2);
         System.out.println(findTopper(db2));
 
-        Student[]mer = mergedb(db,db2);
+        Student[] mer = mergedb(db, db2);
         System.out.println(Arrays.toString(mer));
 
         System.out.println(youngerStudent(mer));
 
-        Student[]ans = removeStudentbyName(mar,"Ganesh");
+        Student[] ans = removeStudentByName(mer, "Ganesh");
         System.out.println(Arrays.toString(ans));
 
-        Student[]ans1 = insertStudent(mer,4);
+        Student[] ans1 = insertStudent(mer, 4);
         System.out.println(Arrays.toString(ans1));
 
     }
 
-    static void showDb(Student[]db1,Student[]db2){
+    static void showDb(Student[] db1, Student[] db2) {
         for (Student student : db1) {
             System.out.println(student);
         }
@@ -53,13 +53,13 @@ public class main {
         }
     }
 
-    static Student findTopper(Student []arr){
+    static Student findTopper(Student[] arr) {
 
         double max = 0;
         Student ans = arr[0];
 
-        for(int i =0;i<arr.length;i++){
-            if(arr[i].per > max){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].per > max) {
                 max = arr[i].per;
                 ans = arr[i];
             }
@@ -67,26 +67,26 @@ public class main {
         return ans;
     }
 
-    static Student[] mergedb(Student[]db1,Student[]db2){
+    static Student[] mergedb(Student[] db1, Student[] db2) {
 
-        Student[]ans = new Student[db1.length + db2.length];
+        Student[] ans = new Student[db1.length + db2.length];
 
-        for(int i =0;i<ans.length;i++){
-            if(i<db1.length){
+        for (int i = 0; i < ans.length; i++) {
+            if (i < db1.length) {
                 ans[i] = db1[i];
-            }else{
-                ans[i]=db2[i-db1.length];
+            } else {
+                ans[i] = db2[i - db1.length];
             }
         }
         return ans;
     }
 
-    static Student youngerStudent(Student[]mer){
+    static Student youngerStudent(Student[] mer) {
         int minAge = mer[0].age;
         Student ans = mer[0];
 
-        for(int i =0;i<mer.length;i++){
-            if(mer[i].age<minAge){
+        for (int i = 0; i < mer.length; i++) {
+            if (mer[i].age < minAge) {
                 minAge = mer[i].age;
                 ans = mer[i];
             }
@@ -94,38 +94,48 @@ public class main {
         return ans;
     }
 
-    static Student[] removeStudentByName(Student[]mer, String name){
+    static Student[] removeStudentByName(Student[] mer, String name) {
         int nameLen = 0;
-        for(int i =0;i<mer.length;i++){
-            if(mer[i].name.equals(name)){
+        for (int i = 0; i < mer.length; i++) {
+            if (mer[i].name.equals(name)) {
                 nameLen++;
             }
         }
-        Student[]removed = new Student[mer.length - nameLen];
-        for(int i =0,j=0;i<mer.length;i++){
-            if(!mer[i].name.equals(name)){
+        Student[] removed = new Student[mer.length - nameLen];
+        for (int i = 0, j = 0; i < mer.length; i++) {
+            if (!mer[i].name.equals(name)) {
                 removed[j++] = mer[i];
             }
         }
         return removed;
     }
 
-    static Student[] removeStudentById(Student[]mer, int id){
-        int idLen = 0;
+    static Student[] removeStudentById(Student[] mer, int id) {
 
-        for(int i =0;i<mer.length;i++){
-            if(mer[i].id == id){
-                idLen++;
-            }
-        }
-        Student[]removedId = new Student[mer.length - idLen];
-        for(int i =0,j=0; i<mer.length;i++){
-            if(!(mer[i].id==id)){
+        Student[] removedId = new Student[mer.length - 1];
+        for (int i = 0, j = 0; i < mer.length; i++) {
+            if (!(mer[i].id == id)) {
                 removedId[j++] = mer[i];
             }
         }
 
         return removedId;
+    }
+
+    static Student[] insertStudent(Student[]mer, int index){
+
+        Student[]newdb = new Student[mer.length];
+
+        for(int i=0,j=0;i<newdb.length;i++){
+            if(i<index){
+                newdb[i] = mer[j++];
+            }else if(i==index){
+                newdb[i] = new Student("Rani",60,2331,65.6,"raisoni");
+            }else{
+                newdb[i] = mer[j++];
+            }
+        }
+        return newdb;
     }
 
 }
