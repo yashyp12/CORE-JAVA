@@ -96,13 +96,11 @@ public class main {
 
     static Student[] removeStudentByName(Student[]mer, String name){
         int nameLen = 0;
-
         for(int i =0;i<mer.length;i++){
             if(mer[i].name.equals(name)){
                 nameLen++;
             }
         }
-
         Student[]removed = new Student[mer.length - nameLen];
         for(int i =0,j=0;i<mer.length;i++){
             if(!mer[i].name.equals(name)){
@@ -112,6 +110,23 @@ public class main {
         return removed;
     }
 
+    static Student[] removeStudentById(Student[]mer, int id){
+        int idLen = 0;
+
+        for(int i =0;i<mer.length;i++){
+            if(mer[i].id == id){
+                idLen++;
+            }
+        }
+        Student[]removedId = new Student[mer.length - idLen];
+        for(int i =0,j=0; i<mer.length;i++){
+            if(!(mer[i].id==id)){
+                removedId[j++] = mer[i];
+            }
+        }
+
+        return removedId;
+    }
 
 }
 
