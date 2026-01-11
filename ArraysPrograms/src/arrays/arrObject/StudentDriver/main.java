@@ -124,7 +124,7 @@ public class main {
 
     static Student[] insertStudent(Student[]mer, int index){
 
-        Student[]newdb = new Student[mer.length];
+        Student[]newdb = new Student[mer.length+1];
 
         for(int i=0,j=0;i<newdb.length;i++){
             if(i<index){
