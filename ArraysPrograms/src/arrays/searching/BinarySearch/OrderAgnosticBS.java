@@ -13,6 +13,7 @@ public class OrderAgnosticBS {
         //find whether the array is sorted in asc or descednig
         boolean isAsc = arr[start] < arr[end];
 
+
         while(start<=end){
             int mid = start + (end-start)/2;
             //same condition for both asc desc
