@@ -7,7 +7,6 @@ public class LeastRepEle {
     static void main(String[] args) {
 
         int[]arr = {2,3,66,5,6,2,3,66,5};
- 
 
         int minfreq = arr.length;
         int minEle = 0;
@@ -17,8 +16,7 @@ public class LeastRepEle {
              int cnt = 1;
             for(int j=i+1;j<arr.length;j++){
                 if(arr[i]==arr[j]){
-                    count[j] = -1;
-                    cnt++;
+                     cnt++;
                 }
             }
            if(cnt<minfreq){
