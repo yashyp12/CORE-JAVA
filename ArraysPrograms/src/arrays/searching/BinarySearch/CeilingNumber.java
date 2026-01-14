@@ -5,9 +5,9 @@ public class CeilingNumber {
     static void main(String[] args) {
         int[]arr = {2,3,5,8,13,14,16,18};
         System.out.println(floorNum(arr,15));
-
     }
 
+    //returns tghe index of smallest no >=target
     static int celingNum(int arr[],int target){
         if(target<0) return -1;
 
@@ -36,7 +36,7 @@ public class CeilingNumber {
 
     }
 
-//    floor number
+//    floor number -> greatest num less than equals to target
      static int floorNum(int arr[],int target){
         if(target<0) return -1;
 
@@ -58,7 +58,7 @@ public class CeilingNumber {
                 return mid;
             }
         }
-        return end;
+          return arr[end];
 
 
     }
