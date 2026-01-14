@@ -4,7 +4,7 @@ public class CeilingNumber {
 
     static void main(String[] args) {
         int[]arr = {2,3,5,8,13,14,16,18};
-        System.out.println(floorNum(arr,15));
+        System.out.println(floorNum(arr,1));
     }
 
     //returns tghe index of smallest no >=target
@@ -16,6 +16,9 @@ public class CeilingNumber {
         // breaking the violocation is the solution for this problem
         // like when the start >end then that time the ans will be start = end+1 which will be the
         // ele greater than or = target
+
+        if(target>arr[arr.length-1]) return -1;
+
         int start = 0;
         int end = arr.length-1;
 
@@ -29,7 +32,7 @@ public class CeilingNumber {
                 return mid;
             }
         }
-        return start;
+        return arr[start];
 
 
 
@@ -45,6 +48,11 @@ public class CeilingNumber {
         // breaking the violocation is the solution for this problem
         // like when the start >end then that time the ans will be start = end+1 which will be the
         // ele greater than or = target
+
+
+//         there is no num les thean the target in the array so
+         if(target<arr[0]) return -1;
+
         int start = 0;
         int end = arr.length-1;
 
@@ -58,7 +66,7 @@ public class CeilingNumber {
                 return mid;
             }
         }
-          return arr[end];
+          return end;
 
 
     }
