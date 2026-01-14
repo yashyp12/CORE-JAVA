@@ -1,7 +1,7 @@
 package Strings;
 
-class MyArrayIndexOutOfBoundsException extends RuntimeException {
-    public MyArrayIndexOutOfBoundsException(String desc) {
+class MyStringIndexOutOfBoundsException extends RuntimeException {
+    public MyStringIndexOutOfBoundsException(String desc) {
         super(desc);
     }
 };
@@ -24,23 +24,25 @@ public final class UserString {
 
     public UserString(String str) {
         arr = new char[str.length()];
-
         for (int i = 0; i < arr.length; i++) {
             arr[index++] = str.charAt(i);
         }
     }
 
     public UserString(int[] arr, int offset, int count) {
+
+        if (arr == null) {
+            throw new NullPointerException("array is null");
+        }
+
         if ((offset + count) > arr.length) {
-            throw new MyArrayIndexOutOfBoundsException("int array index of bounds");
+            throw new MyStringIndexOutOfBoundsException("int array index of bounds");
         }
         this.arr = new char[count];
-
-        for (int i = offset, j = 0; i < arr.length; i++) {
-            this.arr[j++] = (char) arr[i];
-        }
+         for(int i =0; i<count;i++){
+             this.arr[i] = (char) arr[offset+i];
+         }
     }
-
 
     public UserString(byte[] arr) {
         this(arr, 0, arr.length);
@@ -48,7 +50,7 @@ public final class UserString {
 
     public UserString(byte[] arr, int offset, int count) {
         if ((offset + count) > arr.length) {
-            throw new MyArrayIndexOutOfBoundsException("index out of bounds");
+            throw new MyStringIndexOutOfBoundsException("index out of bounds");
         }
         this.arr = new char[count];
 
@@ -59,7 +61,7 @@ public final class UserString {
 
     public UserString(char[] arr, int offset, int count) {
         if ((offset + count) > arr.length) {
-            throw new MyArrayIndexOutOfBoundsException("index of bounds");
+            throw new MyStringIndexOutOfBoundsException("index of bounds");
         }
         this.arr = new char[count];
         for (int i = offset, j = 0; i < (offset + count); i++) {
@@ -84,4 +86,39 @@ public final class UserString {
         }
         return output;
     }
+
+    public char charAt(int index) {
+        if (index < 0 || index > arr.length - 1) throw new MyStringIndexOutOfBoundsException("index out of bounds");
+
+        return this.arr[index];
+    }
+
+    public UserString concat(UserString str) {
+        char[] newArr = new char[this.arr.length + str.length()];
+        int indx = 0;
+        for (char ele : this.arr) {
+            newArr[indx++] = ele;
+        }
+        for (int i = 0; i < str.length(); i++) {
+            newArr[indx++] = str.charAt(i);
+        }
+        return new UserString(newArr);
+    }
+
+
+    public UserString toUpperCase(){
+        UserString newstr = new UserString();
+        char[] newArr = new char[this.arr.length];
+        int indx = 0;
+        for(char ele:this.arr){
+            newArr[indx++] = ele;
+        }
+
+        int indx1 = 0;
+        for(char ele: newArr){
+            // pending implementation
+        }
+        return newstr;
+    }
+
 }

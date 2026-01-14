@@ -6,7 +6,7 @@ public class MyString {
         System.out.println(str.length());
 
         int[]arr = {65,66,67,68,69,70};
-        UserString str1 = new UserString(arr,5,2);
+        UserString str1 = new UserString(arr,1,2);
         System.out.println(str1);
     }
 }
