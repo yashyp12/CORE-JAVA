@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37632ab2-7250-44db-9960-e30e33809a49" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../bin/CheckFibo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/CheckFibo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/CheckPrime.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/CheckPrime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/CheckRotationPrime.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/CheckRotationPrime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/Factors21.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Factors21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/HappyNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/HappyNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/PascalTriangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/PascalTriangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/PowerNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/PowerNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/PrimeFactorisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/PrimeFactorisation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/PrimeRange1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/PrimeRange1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/PronicNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/PronicNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/RotateNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/RotateNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/StrongNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/StrongNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/TwinPrime.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/TwinPrime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/UglyNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/UglyNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/fibonaciiNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/fibonaciiNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/numReverse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/numReverse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/paindroNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/paindroNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/printRotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/printRotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/rangeofPrime.class" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/rangeofPrime.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "yashyp12"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/yashyp12/CORE-JAVA.git",
+    "accountId": "868ebe4e-5f65-4412-a681-f86db2b856eb"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="38I4EnUyUcGjQAuZkrHdBGta3yj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.tools",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28539.13" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28539.13" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37632ab2-7250-44db-9960-e30e33809a49" name="Changes" comment="" />
+      <created>1768473641672</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768473641672</updated>
+      <workItem from="1768473643122" duration="44000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
