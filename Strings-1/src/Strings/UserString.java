@@ -105,20 +105,93 @@ public final class UserString {
         return new UserString(newArr);
     }
 
-
     public UserString toUpperCase(){
         UserString newstr = new UserString();
         char[] newArr = new char[this.arr.length];
+        // copying the orignasl character s to the new char array
         int indx = 0;
         for(char ele:this.arr){
             newArr[indx++] = ele;
         }
 
+        //comversion logic is here
         int indx1 = 0;
         for(char ele: newArr){
             // pending implementation
+            //checks whether teh characters is lowercase or not
+            if(ele >= 97 && ele<=122){
+                newArr[indx1]  = (char) (ele - 32);
+            }
+            indx1++;
         }
-        return newstr;
+        return new UserString(newArr);
     }
+
+
+    public UserString toLowerCase(){
+        UserString newStr = new UserString();
+            char[] newArr = new char[this.arr.length];
+
+            int indx = 0;
+            for(char ele : this.arr){
+                newArr[indx++] = ele;
+            }
+
+            int indx1 =0;
+            for(char ele:newArr){
+                if(ele>=65 && ele<=90){
+                    newArr[indx1++] = (char) (ele + 32);
+                }
+                indx1++;
+            }
+            return new UserString(newArr);
+    }
+
+    public int codePointAt(int indx){
+        if(indx < 0 || indx > arr.length-1)
+            throw new MyStringIndexOutOfBoundsException("invalid index");
+
+        //basically this methods returns the asci value
+        return this.arr[indx] + 0;
+    }
+
+    public int codePointBefore(int indx){
+        if(indx <=0 || indx > arr.length){
+            throw new MyStringIndexOutOfBoundsException("invalid index");
+        }
+        return this.arr[indx - 1] + 0;
+    }
+
+    public boolean isEmpty(){
+        return this.arr.length == 0;
+    }
+
+    public char[] toCharArray(){
+        char[]newArr = new char[this.arr.length];
+        int indx = 0;
+        for(char ele : this.arr){
+            newArr[indx++] = ele;
+         }
+        return newArr;
+    }
+
+    public boolean equals(Object obj) {
+        UserString str = (UserString) obj;
+        if(str.length() != this.length()) return false;
+
+        for(int i =0;i<str.length();i++){
+            if(this.charAt(i) !=str.charAt(i)){
+                return  false;
+            }
+        }
+        return true;
+    }
+
+    public boolean equalsIgnoreCase(UserString comp){
+        return comp.toUpperCase().equals(this.toUpperCase());
+    }
+
+
+
 
 }
