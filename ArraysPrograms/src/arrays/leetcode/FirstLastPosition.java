@@ -18,6 +18,7 @@ public class FirstLastPosition {
         System.out.println(Arrays.toString(ans));
     }
 
+    //time complexity is O(LOGN) O(LOGN)
     public static int[] searchRange(int[] nums, int target) {
         int[] ans = {-1, -1}; // if not found return -1 both {first occurence , lasst occurecbne}
 
