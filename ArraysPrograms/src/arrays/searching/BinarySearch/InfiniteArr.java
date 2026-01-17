@@ -5,9 +5,7 @@ package arrays.searching.BinarySearch;
 
 //find the position of the element in the infinite array
 public class InfiniteArr {
-
     static void main(String[] args) {
-
         // let assuem we have ana infinite array
         /*
         so we dont know the length of the  array
@@ -32,7 +30,6 @@ public class InfiniteArr {
     static int ans(int[] arr, int target) {
         // let first find the range
 //        start from teh box 2
-
         int start = 0;
         int end = 1;
 //        condition for the target to lie in the range
