@@ -14,19 +14,18 @@ public class FirstLastPosition {
         // if the target == mid then if we want first then we search for left side if last occurence then we search for the right side of the array
 
 
-        int []ans = searchRange(arr, 8);
+        int[] ans = searchRange(arr, 8);
         System.out.println(Arrays.toString(ans));
     }
 
     public static int[] searchRange(int[] nums, int target) {
         int[] ans = {-1, -1}; // if not found return -1 both {first occurence , lasst occurecbne}
 
-        int start = search(nums, target, true); //now take the left occuence firsty
-        int end = search(nums, target, false);    //take the last occurecn from the right of the array which will be right
+        ans[0] = search(nums, target, true); //now take the left occuence firsty
+        if (ans[0] != -1) {
+            ans[1] = search(nums, target, false);    //take the last occurecn from the right of the array which will be right
 
-        ans[0] = start;
-        ans[1] = end;
-
+        }
         return ans;
     }
 
