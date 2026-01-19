@@ -312,7 +312,7 @@ public final class UserString {
 
 
 //        reverse array
-        char[]result = new char[index];
+         char[]result = new char[index];
         for(int i =0;i<index;i++){
             result[i] = temp[index-1-i];
         }
