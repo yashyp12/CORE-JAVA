@@ -3,13 +3,13 @@ package arrays.searching.BinarySearch;
 public class CeilingNumber {
 
     static void main(String[] args) {
-        int[]arr = {2,3,5,8,13,14,16,18};
-        System.out.println(floorNum(arr,1));
+        int[] arr = {2, 3, 5, 8, 13, 14, 16, 18};
+        System.out.println(celingNum(arr, 15));
     }
 
     //returns tghe index of smallest no >=target
-    static int celingNum(int arr[],int target){
-        if(target<0) return -1;
+    static int celingNum(int[] arr, int target) {
+        if (target < 0) return -1;
 
         //find the ceilin num means - smallest greatest element from the array
         // ele >=target , means target is 14 the , 14 or >=14 which is 15 is acceptable
@@ -17,31 +17,29 @@ public class CeilingNumber {
         // like when the start >end then that time the ans will be start = end+1 which will be the
         // ele greater than or = target
 
-        if(target>arr[arr.length-1]) return -1;
+        if (target > arr[arr.length - 1]) return -1;
 
         int start = 0;
-        int end = arr.length-1;
+        int end = arr.length - 1;
 
-        while(start<=end){
-            int mid = start + (end-start)/2;
-            if(target<arr[mid]){
-                end = mid-1;
-            }else if(target>arr[mid]){
-                start = mid+1;
-            }else{
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (target < arr[mid]) {
+                end = mid - 1;
+            } else if (target > arr[mid]) {
+                start = mid + 1;
+            } else {
                 return mid;
             }
         }
         return arr[start];
 
 
-
-
     }
 
-//    floor number -> greatest num less than equals to target
-     static int floorNum(int arr[],int target){
-        if(target<0) return -1;
+    //    floor number -> greatest num less than equals to target
+    static int floorNum(int[] arr, int target) {
+        if (target < 0) return -1;
 
         //find the ceilin num means - smallest greatest element from the array
         // ele >=target , means target is 14 the , 14 or >=14 which is 15 is acceptable
@@ -51,22 +49,22 @@ public class CeilingNumber {
 
 
 //         there is no num les thean the target in the array so
-         if(target<arr[0]) return -1;
+        if (target < arr[0]) return -1;
 
         int start = 0;
-        int end = arr.length-1;
+        int end = arr.length - 1;
 
-        while(start<=end){
-            int mid = start + (end-start)/2;
-            if(target<arr[mid]){
-                end = mid-1;
-            }else if(target>arr[mid]){
-                start = mid+1;
-            }else{  
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (target < arr[mid]) {
+                end = mid - 1;
+            } else if (target > arr[mid]) {
+                start = mid + 1;
+            } else {
                 return mid;
             }
         }
-          return end;
+        return end;
 
 
     }
