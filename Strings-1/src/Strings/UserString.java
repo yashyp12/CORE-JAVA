@@ -89,7 +89,6 @@ public final class UserString {
 
     public char charAt(int index) {
         if (index < 0 || index > arr.length - 1) throw new MyStringIndexOutOfBoundsException("index out of bounds");
-
         return this.arr[index];
     }
 
@@ -152,7 +151,7 @@ public final class UserString {
             throw new MyStringIndexOutOfBoundsException("invalid index");
 
         //basically this methods returns the asci value
-        return this.arr[indx] + 0;
+        return this.arr[indx];
     }
 
     public int codePointBefore(int indx) {
