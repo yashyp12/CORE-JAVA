@@ -189,93 +189,60 @@ public final class UserString {
         return comp.toUpperCase().equals(this.toUpperCase());
     }
 
-    public boolean startsWith(UserString prefix) {
 
-        //condition 1 prefic longer than string
-        if (prefix.arr.length > this.arr.length) {
-            return false;
-        }
+    public int indexOf(char ch) {
 
-//        compare character fro m start
-        for (int i = 0; i < prefix.arr.length; i++) {
-            if (this.arr[i] != prefix.arr[i]) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public boolean endsWith(UserString suffix) {
-        if (suffix.arr.length > this.arr.length) {
-            return false;
-        }
-
-        int start = this.arr.length - suffix.arr.length;
-        for (int i = 0; i < suffix.arr.length; i++) {
-
-            if (this.arr[start + i] != suffix.arr[i]) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-
-    public int indexOf(char ch){
-
-        for(int i =0;i<this.arr.length;i++){
-            if(this.arr[i] == ch){
+        for (int i = 0; i < this.arr.length; i++) {
+            if (this.arr[i] == ch) {
                 return i;
             }
         }
         return -1;
     }
 
-    public int indexOf(char ch,int fromIndex){
+    public int indexOf(char ch, int fromIndex) {
 
-        if(fromIndex < 0){
-            fromIndex =0;
+        if (fromIndex < 0) {
+            fromIndex = 0;
         }
 
         //CHECK IF THE POINTING INDEX IS OUTSIDE THE ARRAY
-        if(fromIndex >= this.arr.length){
+        if (fromIndex >= this.arr.length) {
             return -1;
         }
 
-        for(int i = fromIndex;i<this.arr.length;i++)
-        {
-            if(this.arr[i] == ch){
+        for (int i = fromIndex; i < this.arr.length; i++) {
+            if (this.arr[i] == ch) {
                 return i;
             }
         }
         return -1;
     }
 
-    public UserString substring(int beginIndex){
-
-        if(beginIndex<0 || beginIndex > this.arr.length)
-        {
-            throw new MyStringIndexOutOfBoundsException("index out of bounds");
-        }
-
-//        calculate new length
-        int newLength = this.arr.length - beginIndex;
-        //create new array
-        char[] newArr = new char[newLength];
-
-        for(int i =0;i<newLength;i++){
-            newArr[i] = this.arr[beginIndex+i];
-        }
-        return new UserString(newArr);
+    public UserString substring(int indx) {
+        return substring(indx, arr.length);
     }
 
-    public UserString replace(char oldChar, char newChar){
-        char[]newArr = new char[this.arr.length];
+    public UserString substring(int start, int end) {
+        if (start < 0 || start > arr.length - 1 || start > end) {
+            throw new MyStringIndexOutOfBoundsException("Invalid index");
+        }
 
-        for(int i = 0; i<this.arr.length;i++){
-            if(this.arr[i] == oldChar){
+        UserString str = new UserString();
+        for (int i = start; i < end; i++) {
+            char ch = this.arr[i];
+            str = str.concat(new UserString(ch + " "));
+        }
+        return str;
+    }
+
+    public UserString replace(char oldChar, char newChar) {
+        char[] newArr = new char[this.arr.length];
+
+        for (int i = 0; i < this.arr.length; i++) {
+            if (this.arr[i] == oldChar) {
                 newArr[i] = newChar;
-            }else{
+            } else {
                 newArr[i] = this.arr[i];
             }
         }
@@ -283,61 +250,130 @@ public final class UserString {
         return new UserString(newArr);
     }
 
-//    CONVERTS THE primitves to String
-    public static UserString valueOf(int num){
+    //    CONVERTS THE primitves to String
+    public static UserString valueOf(int num) {
 
         //handle 0 case
-        if(num == 0){
+        if (num == 0) {
             return new UserString("0");
         }
 
         boolean isNegative = false;
-        if(num < 0){
+        if (num < 0) {
             isNegative = true;
             num = -num;
         }
 
-        char[]temp = new char[20];
+        char[] temp = new char[20];
         int index = 0;
 
-        while(num>0){
-            int digit = num%10;
-            temp[index++] = (char)('0' + digit);
-            num = num/10;
+        while (num > 0) {
+            int digit = num % 10;
+            temp[index++] = (char) ('0' + digit);
+            num = num / 10;
         }
 
-        if(isNegative){
+        if (isNegative) {
             temp[index++] = '-';
         }
 
 
 //        reverse array
-         char[]result = new char[index];
-        for(int i =0;i<index;i++){
-            result[i] = temp[index-1-i];
+        char[] result = new char[index];
+        for (int i = 0; i < index; i++) {
+            result[i] = temp[index - 1 - i];
         }
 
         return new UserString(result);
     }
 
 
-    public boolean contentEquals(StringBuffer sb){
-        if(sb.length() != this.arr.length){
+    public boolean contentEquals(StringBuffer sb) {
+        if (sb.length() != this.arr.length) {
             return false;
         }
-        for(int i =0;i<this.arr.length;i++){
-            if(this.arr[i] != sb.charAt(i)){
+        for (int i = 0; i < this.arr.length; i++) {
+            if (this.arr[i] != sb.charAt(i)) {
                 return false;
             }
         }
         return true;
-
-
     }
 
 
+    public UserString trim() {
+        UserString str = new UserString();
+
+        int i = 0;
+//        trim string from hthe starts
+        for (; i < this.arr.length; i++) {
+            if (arr[i] != ' ') {
+                break;
+            }
+        }
+        str = substring(i);
+        int j = str.length() - 1;
+        for (; j >= 0; j--) {
+            if (str.charAt(j) != ' ') {
+                break;
+                ;
+            }
+        }
+        str = str.substring(0, j + 1);
+        return str;
+    }
+
+    public boolean startsWith(UserString str) {
+        return startsWith(str, 0);
+    }
+
+    public boolean startsWith(UserString str, int indx) {
+        if (str.length() > this.arr.length) return false;
 
 
+        for (int i = 0, j = indx; i < str.length(); i++, j++) {
+            if (this.arr[j] != str.charAt(i)) return false;
+        }
+
+        return true;
+    }
+
+
+    public boolean endsWith(UserString str) {
+        if (str.length() > this.arr.length)
+            return false;
+
+        for (int i = str.length() - 1, j = j = this.arr.length - 1; i >= 0; i--, j--) {
+            if (this.arr[j] != str.charAt(i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public UserString[] split(String str) {
+        int cnt = 1;
+        for (char ele : this.arr) {
+            if (ele == ' ') cnt++;
+        }
+
+        UserString[] arr1 = new UserString[cnt];
+        int indx = 0;
+        UserString str1 = new UserString();
+
+        for (int i = 0; i < this.arr.length; i++) {
+            if (this.arr[i] != ' ') {
+                str1 = str1.concat(new UserString(this.arr[i] + ""));
+
+            } else {
+                arr1[indx++] = str1;
+
+            }
+        }
+
+        arr1[indx] = str1;
+        return arr1;
+    }
 
 
 }

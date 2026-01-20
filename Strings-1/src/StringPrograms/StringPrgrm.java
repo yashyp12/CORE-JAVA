@@ -17,5 +17,7 @@ public class StringPrgrm {
         }
         System.out.println(count);
 
+
+        System.out.println(str.startsWith("a"));
     }
 }
