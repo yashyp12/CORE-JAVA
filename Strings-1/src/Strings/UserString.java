@@ -316,7 +316,7 @@ public final class UserString {
         for (; j >= 0; j--) {
             if (str.charAt(j) != ' ') {
                 break;
-                ;
+
             }
         }
         str = str.substring(0, j + 1);
