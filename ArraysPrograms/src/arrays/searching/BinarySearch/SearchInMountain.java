@@ -64,7 +64,6 @@ public class SearchInMountain {
         return -1;
     }
 
-
     static int peakIndexInMountainArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
