@@ -30,9 +30,9 @@ Q find the pivot
 public class RotatedBSearch {
 
    public static void main(String[] args) {
-        int[] arr = {1};
+        int[] arr = {12,2,4,5,7,8,9,10};
 //        System.out.println(findPivot(arr));
-        System.out.println(search(arr, 0));
+        System.out.println(search(arr, 5));
     }
 
     public static int search(int[] nums, int target) {
@@ -43,7 +43,6 @@ public class RotatedBSearch {
             //now do binary search
             return binarySearch(nums, target, 0, nums.length - 1);
         }
-
         //if pivot is found , we have found 2 asc sorted arrays
         if (nums[pivot] == target) {
             return pivot;
@@ -112,8 +111,6 @@ public class RotatedBSearch {
         }
         return -1; // element not found
     }
-
-
 
 
 
