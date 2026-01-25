@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b0a9af8-6bb4-4fec-ad3f-35891bda9539" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BuilderString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuilderString1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FindVowels.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MethodsStrings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Operators.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PreetyPrinting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RevString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/String12.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StringBuffer.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StringBuffer1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StringFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StringPerformance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Strings.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThreadSafe-StringsBuilder" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/palindroString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/palindroString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/strings.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ArraysPrograms/src/arrays/searching/BinarySearch/SplitArrLargestSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strings-1/src/StringPrograms/problems/ExmpleString3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strings-1/src/StringPrograms/problems/StringLowerCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strings-1/src/StringPrograms/problems/StringProblem2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArraysPrograms/src/arrays/out/production/arrays/arrays/qodana.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +47,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -77,8 +62,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28539.13" />
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28539.13" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
       </set>
     </attachedChunks>
   </component>
@@ -92,6 +77,7 @@
       <workItem from="1768033596108" duration="11000" />
       <workItem from="1768033637591" duration="24000" />
       <workItem from="1768033782428" duration="355000" />
+      <workItem from="1769360065250" duration="17000" />
     </task>
     <servers />
   </component>
