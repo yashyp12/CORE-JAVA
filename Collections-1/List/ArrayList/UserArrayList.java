@@ -126,10 +126,13 @@ public class UserArrayList<E> {
             }
         }
 
-
         return -1;
     }
 
+
+    public boolean contains(Object o) {
+        return indexOf(o) >= 0;
+    }
 
 }
 
