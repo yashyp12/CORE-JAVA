@@ -1,6 +1,5 @@
 package Methods;
 
-import Strings.MyString;
 import Strings.UserString;
 
 public class StringMethods {

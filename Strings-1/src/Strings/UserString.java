@@ -6,6 +6,7 @@ class MyStringIndexOutOfBoundsException extends RuntimeException {
     }
 };
 
+
 public final class UserString {
     private char[] arr;
     private int index;
