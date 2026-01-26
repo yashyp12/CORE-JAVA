@@ -157,6 +157,13 @@ public E get (int indx){
     }
 
 
+    @Override
+    public boolean equals(Object obj){
+        E ele = (E)obj;
+
+        return this.hashCode()==ele.hashCode();
+    }
+
     public boolean add(E ele) {
         if (indx == arr.length) {
             int newCap = newCapacity(arr.length);
