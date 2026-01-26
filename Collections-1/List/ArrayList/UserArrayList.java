@@ -164,6 +164,12 @@ public E get (int indx){
         return this.hashCode()==ele.hashCode();
     }
 
+    public void clear(){
+        E[] newArr = (E[]) new Object[this.arr.length];
+        this.indx = 0;
+        arr=newArr;
+    }
+
     public boolean add(E ele) {
         if (indx == arr.length) {
             int newCap = newCapacity(arr.length);
@@ -177,6 +183,8 @@ public E get (int indx){
         arr[indx++] = ele;
         return true;
     }
+
+
 
 
     private int newCapacity(int oldCap) {
@@ -278,25 +286,30 @@ public E get (int indx){
 class DriverExampleArrayList {
     static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<>();
-        System.out.println(list);
-        System.out.println(list.isEmpty());
-        list.add(10);
-        System.out.println(list);
-        System.out.println(list.size());
-        System.out.println(list.isEmpty());
-
+//        ArrayList<Integer> list = new ArrayList<>();
+//        System.out.println(list);
+//        System.out.println(list.isEmpty());
+//        list.add(10);
+//        System.out.println(list);
+//        System.out.println(list.size());
+//        System.out.println(list.isEmpty());
+//
+//
+//        UserArrayList<Integer> list1 = new UserArrayList<>();
+//        System.out.println(list1.isEmpty());
+//
+//        list1.add(10);
+//        list1.add(20);
+//        list.add(30);
+//
+//        System.out.println(list1.size());
+//        System.out.println(list1.isEmpty());
+//        System.out.println(list1.getFirst());
 
         UserArrayList<Integer> list1 = new UserArrayList<>();
-        System.out.println(list1.isEmpty());
-
-        list1.add(10);
-        list1.add(20);
-        list.add(30);
-
-        System.out.println(list1.size());
-        System.out.println(list1.isEmpty());
-        System.out.println(list1.getFirst());
+        System.out.println( list1.size());
+        ArrayList<Integer> list2 = new ArrayList<>();
+        System.out.println(list2.size());
     }
 }
 
