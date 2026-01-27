@@ -8,7 +8,9 @@ public class ReverseArr {
         int[] arr = {1, 2, 3, 4, 5};
 //        reverse(arr);
 //        reverse2(arr);
-        reverse3(arr);
+//        reverse3(arr);
+
+        reverse4(arr);
     }
 
     static void reverse(int[] arr) {
@@ -40,15 +42,27 @@ public class ReverseArr {
 //
     static void reverse3(int[]arr){
         int[] ans = new int[arr.length];
-
         int i =0;
-
         while(i<arr.length){
             ans[i] = arr[arr.length-i-1];
             i++;
         }
 
         System.out.println(Arrays.toString(ans));
+    }
+
+    static void reverse4(int[]arr){
+        int i =0, j =arr.length-1;
+
+        while(i<=j){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+        System.out.println(Arrays.toString(arr));
+
     }
 
 }

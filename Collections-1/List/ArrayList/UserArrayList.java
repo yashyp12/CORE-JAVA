@@ -266,6 +266,7 @@ public E get (int indx){
         for (int i = indx + 1; i <= size() - 1; i++) {
             arr[i - 1] = arr[i];
         }
+        
         arr[size() - 1] = null;
         this.indx--;
         return temp;
