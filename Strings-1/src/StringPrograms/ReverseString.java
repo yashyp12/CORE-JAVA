@@ -34,6 +34,15 @@ public class ReverseString {
         return rev;
     }
 
+    private static String reversestrr(String str){
+        String rev1 = "";
+
+        for(char ele:str.toCharArray()){
+            rev1+=ele+rev1;
+        }
+        return rev1;
+    }
+
     private static String reverseLogic1(String str) {
         String str3 = "";
         String str2 ="";
