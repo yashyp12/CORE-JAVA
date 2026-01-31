@@ -95,8 +95,11 @@ class Main{
         System.out.println(list.add(15));
         System.out.println(list.add(123));
         System.out.println(list);
+
+        list.addLast(23);
+        System.out.println(list);
+        System.out.println(list.getLast());
+
     }
-
-
 
 }
