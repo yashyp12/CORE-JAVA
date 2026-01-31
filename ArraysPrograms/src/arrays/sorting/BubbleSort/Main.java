@@ -7,8 +7,9 @@ import java.util.Arrays;
 public class Main {
 
     static void main(String[] args) {
-        int[] arr = {3, 1, 5, 4, 2};
-        bubble(arr);
+        int[] arr = {3,5,6,7,-4};
+//        bubble(arr);
+        selection(arr);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -37,12 +38,15 @@ public class Main {
         }
     }
 
+
+    //select the element and put it into a correct position
     static void selection(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             //find the maximum item in remaining array and swap with correct index
 
             int last = arr.length - i - 1;
             int maxIndex = getMaxIndex(arr, 0, last);
+            swap(arr,maxIndex,last);
         }
     }
 
