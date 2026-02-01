@@ -94,7 +94,6 @@ public class UserLinkedList<E> implements Cloneables {
         indx--;
         return temp;
 
-
     }
 
     public E getFirst(){
