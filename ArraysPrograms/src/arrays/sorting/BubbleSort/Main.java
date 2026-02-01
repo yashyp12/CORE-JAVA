@@ -7,9 +7,11 @@ import java.util.Arrays;
 public class Main {
 
     static void main(String[] args) {
-        int[] arr = {3,5,6,7,-4};
+        int[] arr = {5,3,4,1,2};
 //        bubble(arr);
-        selection(arr);
+//        selection(arr);
+
+        insertion(arr);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -46,7 +48,7 @@ public class Main {
 
             int last = arr.length - i - 1;
             int maxIndex = getMaxIndex(arr, 0, last);
-            swap(arr,maxIndex,last);
+            swap(arr, maxIndex, last);
         }
     }
 
@@ -60,10 +62,25 @@ public class Main {
         return max;
     }
 
-    static void swap(int[]arr, int first, int second){
+    static void swap(int[] arr, int first, int second) {
         int temp = arr[first];
         arr[first] = arr[second];
         arr[second] = temp;
     }
+
+    static void insertion(int[] arr) {
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j > -0; j--) {
+                if (arr[j] < arr[j - 1]) {
+                    swap(arr, j, j - 1);
+                } else {
+                    break;
+                }
+            }
+        }
+
+    }
+
 
 }

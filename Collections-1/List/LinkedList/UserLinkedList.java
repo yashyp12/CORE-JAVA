@@ -58,8 +58,13 @@ public class UserLinkedList<E> {
 
     public void addFirst(E ele){
         Node<E> newNode = new Node<E>(ele);
-        newNode.next = head;
-        head = newNode;
+
+        if(indx==0){
+            head = tail = newNode;
+        }else{
+            newNode.next =head;
+            head = newNode;
+        }
         indx++;
     }
 
@@ -99,6 +104,9 @@ class Main{
         list.addLast(23);
         System.out.println(list);
         System.out.println(list.getLast());
+
+        list.addFirst(22);
+        System.out.println(list);
 
     }
 
