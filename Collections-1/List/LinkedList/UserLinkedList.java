@@ -1,5 +1,10 @@
 package List.LinkedList;
 
+class UserIndexOutOfBoundsException extends RuntimeException{
+    UserIndexOutOfBoundsException(String desc){
+        super(desc);
+    }
+}
 
 class UserNoSuchElementException extends RuntimeException{
     UserNoSuchElementException(){
@@ -7,7 +12,7 @@ class UserNoSuchElementException extends RuntimeException{
     }
 }
 
-public class UserLinkedList<E> {
+public class UserLinkedList<E> implements Cloneables {
     private int indx ;
     private Node<E> head;
     private Node<E> tail;
@@ -38,8 +43,7 @@ public class UserLinkedList<E> {
     }
 
     public boolean add(E ele){
-        Node<E> newNode = new Node(ele);
-
+        Node<E> newNode = new Node(ele)
         if(indx==0){
             head = newNode;
             tail = head;
@@ -53,12 +57,14 @@ public class UserLinkedList<E> {
     }
 
     public void addLast(E ele){
+
+        if(size() ==0) throw new UserNoSuchElementException();
         add(ele);
     }
 
     public void addFirst(E ele){
+        if(size()==0) throw new UserNoSuchElementException();
         Node<E> newNode = new Node<E>(ele);
-
         if(indx==0){
             head = tail = newNode;
         }else{
@@ -70,6 +76,25 @@ public class UserLinkedList<E> {
 
     public int size(){
         return indx;
+    }
+
+
+    public E removeLast(){
+        if(size()==0) throw new UserNoSuchElementException();
+
+        E temp = tail.ele;
+        Node<E> curr = head;
+
+        for(int i =0;i<size()-2;i++){
+            curr = curr.next;
+        }
+
+        tail = curr;
+        curr.next = null;
+        indx--;
+        return temp;
+
+
     }
 
     public E getFirst(){
