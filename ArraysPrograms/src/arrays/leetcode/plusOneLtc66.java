@@ -5,7 +5,6 @@ import java.util.Arrays;
 
 //https://leetcode.com/problems/plus-one/description/
 public class plusOneLtc66 {
-
     static void main(String[] args) {
 
         int[] arr = {1,2,3};
