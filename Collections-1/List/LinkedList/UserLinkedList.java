@@ -57,7 +57,6 @@ public class UserLinkedList<E>  {
     }
 
     public void addLast(E ele){
-
         if(size() ==0) throw new UserNoSuchElementException();
         add(ele);
     }
@@ -81,19 +80,15 @@ public class UserLinkedList<E>  {
 
     public E removeLast(){
         if(size()==0) throw new UserNoSuchElementException();
-
         E temp = tail.ele;
         Node<E> curr = head;
-
         for(int i =0;i<size()-2;i++){
             curr = curr.next;
         }
-
         tail = curr;
         curr.next = null;
         indx--;
         return temp;
-
     }
 
     public E removeFirst(){
@@ -106,7 +101,6 @@ public class UserLinkedList<E>  {
         indx--;
         return temp;
     }
-
 
     public E getFirst(){
         if(size()==0){
@@ -123,6 +117,41 @@ public class UserLinkedList<E>  {
     }
 
 
+    public E remove(int indx){
+        if(indx<0 || indx>=size()){
+            throw new UserIndexOutOfBoundsException("Index: " + indx+", Size "+ size());
+        }
+        //case 1 - remove head if index is 0
+        if(indx==0){
+            E temp = head.ele;
+            head = head.next;
+            if(size()==1){
+                tail = null;
+            }
+            this.indx--;
+            return temp;
+        }
+
+        //case 3 - remove non-head
+        Node<E> curr1 = head;
+        for(int i =0;i<indx-1; i++){
+            curr1 = curr1.next;
+
+        }
+        Node<E> curr2 = curr1.next;
+        curr1.next = curr2.next;
+
+        E temp = curr2.ele;
+        curr2.next = null;
+        this.indx--;
+        return temp;
+    }
+
+    public boolean contains(Object obj){
+        E search = (E) obj;
+        
+    }
+
     public void add(int indx, E ele){
         if(indx<0 || indx>size()){
             throw new UserIndexOutOfBoundsException("Index : "+indx+", Size"+ size());
@@ -130,15 +159,15 @@ public class UserLinkedList<E>  {
 
         Node<E> newNode = new Node<E>(ele);
         Node<E> curr1 = head;
+
         for(int i =0;i<indx-1;i++){
             curr1 = curr1.next;
         }
-        Node<E>curr2 = curr1.next;
 
+        Node<E>curr2 = curr1.next;
 
         newNode.next = curr2;
          curr1.next = newNode;
-
          if(newNode.next == null){
              tail = newNode;
          }
