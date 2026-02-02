@@ -3,16 +3,13 @@ package Inheritance.sealedClass;
 
 public class PaymentDriver{
     static void main(String[] args) {
-
         Payment p1 = new CC();
         Payment p2 = new NetBanking();
         Payment p3 = new UPI();
-
         p1.payment();
         p2.payment();
         p3.payment();
     }
-
 }
 
   sealed abstract class Payment
