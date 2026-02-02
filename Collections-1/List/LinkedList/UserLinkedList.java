@@ -12,7 +12,7 @@ class UserNoSuchElementException extends RuntimeException{
     }
 }
 
-public class UserLinkedList<E> implements Cloneables {
+public class UserLinkedList<E>  {
     private int indx ;
     private Node<E> head;
     private Node<E> tail;
@@ -43,7 +43,7 @@ public class UserLinkedList<E> implements Cloneables {
     }
 
     public boolean add(E ele){
-        Node<E> newNode = new Node(ele)
+        Node<E> newNode = new Node(ele);
         if(indx==0){
             head = newNode;
             tail = head;
@@ -96,6 +96,18 @@ public class UserLinkedList<E> implements Cloneables {
 
     }
 
+    public E removeFirst(){
+        if(size()==0) throw new UserNoSuchElementException();
+
+        E temp = head.ele;
+        Node<E> curr = head;
+        head = head.next;
+        curr.next = null;
+        indx--;
+        return temp;
+    }
+
+
     public E getFirst(){
         if(size()==0){
             throw new UserNoSuchElementException();
@@ -109,6 +121,30 @@ public class UserLinkedList<E> implements Cloneables {
         }
         return tail.ele;
     }
+
+
+    public void add(int indx, E ele){
+        if(indx<0 || indx>size()){
+            throw new UserIndexOutOfBoundsException("Index : "+indx+", Size"+ size());
+        }
+
+        Node<E> newNode = new Node<E>(ele);
+        Node<E> curr1 = head;
+        for(int i =0;i<indx-1;i++){
+            curr1 = curr1.next;
+        }
+        Node<E>curr2 = curr1.next;
+
+
+        newNode.next = curr2;
+         curr1.next = newNode;
+
+         if(newNode.next == null){
+             tail = newNode;
+         }
+        this.indx++;
+    }
+
 
     public boolean isEmpty(){
         return size()==0;
