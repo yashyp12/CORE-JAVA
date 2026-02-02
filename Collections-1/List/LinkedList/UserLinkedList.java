@@ -265,9 +265,11 @@ class Main {
         System.out.println(list);
 
         //let add an element to the index
-        list.add(1,12);
-        list.remove(1);
-        list.get(2);
+//        list.add(1,12);
+//        list.remove(1);
+//        list.get(2);
+//        list.removeFirst();
+        list.getFirst();
     }
 
 }
