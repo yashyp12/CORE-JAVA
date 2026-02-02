@@ -246,7 +246,7 @@ public class UserLinkedList<E> implements Cloneable {
 
 class Main {
 
-    static void main(String[] args) {
+    static void main(String[] args) throws CloneNotSupportedException {
         UserLinkedList<Integer> list = new UserLinkedList<>();
 //        System.out.println(list.add(19));
 //        System.out.println(list.add(15));
@@ -270,6 +270,10 @@ class Main {
 //        list.get(2);
 //        list.removeFirst();
         list.getFirst();
+
+     UserLinkedList<Integer> listx= (UserLinkedList<Integer>) list.clone();
+
+        System.out.println(listx);
     }
 
 }
