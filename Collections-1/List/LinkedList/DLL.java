@@ -25,6 +25,10 @@ public class DLL {
         System.out.println("END/NULL");
     }
 
+    public void displayReverse(){
+        
+    }
+
 
     private class Node {
         int val;
