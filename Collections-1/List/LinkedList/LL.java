@@ -1,7 +1,5 @@
 package List.LinkedList;
 
-import java.util.LinkedList;
-
 public class LL {
     private Node head;
     private Node tail;
@@ -117,7 +115,8 @@ public class LL {
             }
             node = node.next;
         }
-        return node;
+
+        return null;
     }
 
     public Node get(int index) {

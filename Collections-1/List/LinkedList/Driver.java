@@ -28,7 +28,8 @@ public class Driver {
         list.display();
 //        list.deleteLast();
 //        list.delete(2);
-
+        System.out.println(list.find(8));
          list.display();
+
     }
 }
