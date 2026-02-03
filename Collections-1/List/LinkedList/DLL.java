@@ -17,17 +17,27 @@ public class DLL {
 
     public void display(){
         Node temp = head;
+        Node last = null;
+
         while(temp!=null){
             System.out.print( + temp.val + " ->");
+            last = temp;
             temp = temp.next; //not chaning modifying the structure of the linked list
         }
 
         System.out.println("END/NULL");
+
+//        //printing in reverse
+        System.out.println("print in reverse");
+//
+        while(last!=null){
+            System.out.print(last.val + " -> ");
+            last = last.prev;
+        }
+        System.out.println("start");
+
     }
 
-    public void displayReverse(){
-        
-    }
 
 
     private class Node {
