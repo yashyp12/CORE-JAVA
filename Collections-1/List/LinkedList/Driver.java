@@ -1,5 +1,7 @@
 package List.LinkedList;
 
+import org.w3c.dom.Node;
+
 public class Driver {
     static void main(String[] args) {
 
@@ -18,11 +20,15 @@ public class Driver {
         list.insertLast(8);
         list.insertLast(12);
         list.insertLast(18);
+//        list.display();
+//        list.insert(34,1);
+//        list.display();
+//
+//        list.deleteFirst();
         list.display();
-        list.insert(34,1);
-        list.display();
+//        list.deleteLast();
+//        list.delete(2);
 
-        list.deleteFirst();
-        list.display();
+         list.display();
     }
 }
