@@ -21,5 +21,8 @@ public class Driver {
         list.display();
         list.insert(34,1);
         list.display();
+
+        list.deleteFirst();
+        list.display();
     }
 }
