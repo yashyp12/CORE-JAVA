@@ -35,6 +35,9 @@ public class Driver {
         dlist.insertFirst(35);
         dlist.insertFirst(36);
         dlist.insertFirst(37);
+        dlist.insertFirst(38);
+//        dlist.display();
+        dlist.insertLast(33);
         dlist.display();
     }
 }
