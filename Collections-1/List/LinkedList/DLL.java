@@ -2,7 +2,7 @@ package List.LinkedList;
 
 public class DLL {
 
-    Node head;
+    private Node head;
 
     public void insertFirst(int val){
         Node newNode =  new Node(val); //box is created new
@@ -17,15 +17,13 @@ public class DLL {
 
     public void display(){
         Node temp = head;
-
         while(temp!=null){
-            System.out.print("HEAD -> " + temp.val + " ->");
+            System.out.print( + temp.val + " ->");
             temp = temp.next; //not chaning modifying the structure of the linked list
         }
 
+        System.out.println("END/NULL");
     }
-
-
 
 
     private class Node {
