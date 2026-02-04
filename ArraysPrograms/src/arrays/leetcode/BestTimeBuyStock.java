@@ -31,6 +31,7 @@ public class BestTimeBuyStock {
 
     //optimised O(1)
       public static int maxProfit2(int[] prices) {
+        if(prices ==null || prices.length<2) return 0;
 
         int minPrice = Integer.MAX_VALUE;
         int maxProfit = 0;
