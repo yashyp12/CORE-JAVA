@@ -38,8 +38,9 @@ public class Driver {
         dlist.insertFirst(38);
 //        dlist.display();
         dlist.insertLast(33);
+//        dlist.display();
+        dlist.insertAfter(35,99);
         dlist.display();
-
 
     }
 }
