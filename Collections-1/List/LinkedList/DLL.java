@@ -26,18 +26,23 @@ public class DLL {
 
     public void insertLast(int val) {
         Node newNode = new Node(val);
+        Node temp = head;
+        newNode.next = null;
 
-        //case 1 - empty list
-        if (head == null) {
-            head=tail=newNode;
+        if(head==null){
+            newNode.prev = null;
+            head = newNode;
+            return;
         }
-        //case 2- non empty list
-        else {
-            tail.next = newNode;
-            newNode.prev = tail;
-            tail = newNode;
+
+        while(temp.next!=null){
+          temp = temp.next;
         }
-        size++;
+
+        temp.next = newNode;
+        newNode.prev = temp;
+
+
     }
 
     public void display() {
