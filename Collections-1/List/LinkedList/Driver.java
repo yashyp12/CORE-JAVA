@@ -31,16 +31,27 @@ public class Driver {
 //        System.out.println(list.find(8));
 //         list.display();
 
-        dlist.insertFirst(34);
-        dlist.insertFirst(35);
-        dlist.insertFirst(36);
-        dlist.insertFirst(37);
-        dlist.insertFirst(38);
+//        dlist.insertFirst(34);
+//        dlist.insertFirst(35);
+//        dlist.insertFirst(36);
+//        dlist.insertFirst(37);
+//        dlist.insertFirst(38);
+////        dlist.display();
+//        dlist.insertLast(33);
+////        dlist.display();
+//        dlist.insertAfter(35,99);
 //        dlist.display();
-        dlist.insertLast(33);
-//        dlist.display();
-        dlist.insertAfter(35,99);
-        dlist.display();
+
+    CLL listc =new CLL();
+    listc.insert(24);
+    listc.insert(25);
+    listc.insert(26);
+    listc.insert(27);
+    listc.insert(28);
+    listc.delete(26);
+
+    listc.display();
+
 
     }
 }
