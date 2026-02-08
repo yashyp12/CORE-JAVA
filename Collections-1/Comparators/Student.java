@@ -24,6 +24,8 @@ public class Student implements Comparable<Student> {
     @Override
     public int compareTo(Student o) {
         int diff = (int)(this.marks - o.marks);
+//        int diff = -(int)(this.marks - o.marks); desc order
+        System.out.println("checking the compar to method ");
         //if diff == 0 means both are equal
             // if diff < 1 : means o is bigger else o is smaller
         return diff;
@@ -41,7 +43,12 @@ public class Student implements Comparable<Student> {
         Student [] list = {yash,rahul,shubham,rakesh,sagar};
 
         System.out.println(Arrays.toString(list));
-        Arrays.sort(list);
+//        Arrays.sort(list);
+//        replacing it with teh lamda expression
+        Arrays.sort(list,(o1,o2)-> -(int)(o1.marks-o2.marks));
+
+
+
         System.out.println(Arrays.toString(list));
 
         if(yash.compareTo(rahul)<0){
